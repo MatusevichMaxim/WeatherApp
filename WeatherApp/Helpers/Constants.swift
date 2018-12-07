@@ -1,11 +1,7 @@
 import UIKit
 
-class Constants {
-    enum Config {
-        
-    }
-    enum Color {
-        static let primaryColor = UIColor(red: 0.22, green: 0.58, blue: 0.29, alpha: 1.0)
-        static let secondaryColor = UIColor.lightGray
-    }
+struct Constants {
+    static let screenWidth = UIScreen.main.bounds.width
+    static let screenHeight = UIScreen.main.bounds.height
+    static let statusBarHeight = UIApplication.shared.statusBarFrame.height
 }
