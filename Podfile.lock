@@ -2,19 +2,23 @@ PODS:
   - CSVImporter (1.9.1):
     - HandySwift (~> 2.5)
   - HandySwift (2.7.0)
+  - PureLayout (3.1.4)
 
 DEPENDENCIES:
   - CSVImporter (~> 1.7)
+  - PureLayout
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CSVImporter
     - HandySwift
+    - PureLayout
 
 SPEC CHECKSUMS:
   CSVImporter: 1543192354ecf8abccd2cc77947d190fd9cf2b18
   HandySwift: f1315d56ea189e1510832f94ae24dac2958148dc
+  PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
 
-PODFILE CHECKSUM: 0471fd13c129fab80c014ae0dd7dd4ce105705a6
+PODFILE CHECKSUM: 7d07d29a61b0861831212041577411acaa109b90
 
 COCOAPODS: 1.5.3

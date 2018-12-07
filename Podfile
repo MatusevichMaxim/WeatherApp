@@ -3,4 +3,5 @@ use_frameworks!
 
 target 'WeatherApp' do
     pod 'CSVImporter', '~> 1.7'
+    pod 'PureLayout'
 end
