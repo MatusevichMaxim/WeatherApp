@@ -17,9 +17,43 @@ class ViewController: UIViewController {
     var tipTitle: UILabel!
     var tipLabel: UILabel!
     
+    lazy var weatherManager = APIWeatherManager(apiKey: Constants.apiKey)
+    // need to get real data
+    let coordinates = Coordinates(latitude: 53.906411, longitude: 27.532324)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupScrollContent()
+        toggleActivityIndicator(on: true)
+        getCurrentWeatherData()
+    }
+    
+    func toggleActivityIndicator(on: Bool) {
+        if (on) {
+            // start animating
+        } else {
+            // stop animating
+        }
+    }
+    
+    func getCurrentWeatherData() {
+        weatherManager.fetchCurrentWeatherWith(coordinates: coordinates) { (result) in
+            self.toggleActivityIndicator(on: false)
+            switch result {
+            case .Success(let currentWeather):
+                self.updateUIWith(currentWeather: currentWeather)
+            case .Failure(let error as NSError):
+                let alertController = UIAlertController(title: "Unable to get data", message: "\(error.localizedDescription)", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                alertController.addAction(okAction)
+                self.present(alertController, animated: true, completion: nil)
+            default: break
+            }
+        }
+    }
+    
+    func updateUIWith(currentWeather: CurrentWeatherModel) {
+        mainTemperatureLabel.text = currentWeather.temperatureString
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -68,7 +102,6 @@ class ViewController: UIViewController {
         
         mainTemperatureLabel = UILabel()
         mainTemperatureLabel.font = mainTemperatureLabel.font.withSize(72)
-        mainTemperatureLabel.text = "59°"
         mainTemperatureLabel.textColor = .white
         mainTemperatureLabel.textAlignment = .center
         interactionBackground.addSubview(mainTemperatureLabel)
