@@ -5,8 +5,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var backgroundScrollView: UIScrollView!
     
+    let maxScaleFactor : Double = 0.5
+    
     var timelineScrollView: UIScrollView!
     var interactionBackground: UIImageView!
+    var frontLayer: UIImageView!
     var interactionTimeline: UIView!
     var sliderPanel: UIView!
     var timelineCursor: UIView!
@@ -31,10 +34,18 @@ class ViewController: UIViewController {
         backgroundScrollView.isPagingEnabled = true
         
         let background = UIImage(named: "background")
+        
+        // front Layer
+        frontLayer = UIImageView()
+        frontLayer.frame = CGRect(x: 0, y: 0, width: Constants.screenWidth * 2, height: Constants.screenHeight)
+        frontLayer.image = background
+        
         interactionBackground = UIImageView()
         backgroundScrollView.addSubview(interactionBackground)
         interactionBackground.frame = CGRect(x: 0, y: 0, width: Constants.screenWidth * 2, height: Constants.screenHeight)
-        interactionBackground.image = background
+        interactionBackground.addSubview(frontLayer)
+        
+        frontLayer.autoPinEdgesToSuperviewEdges()
         
         // Timeline scrollView //
         timelineScrollView = UIScrollView(frame: CGRect(x: Constants.screenWidth, y: 0, width: Constants.screenWidth, height: Constants.screenHeight))
@@ -128,7 +139,12 @@ extension ViewController : UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView == backgroundScrollView && scrollView.contentOffset.x < UIScreen.main.bounds.width {
-            // place for parallax
+            // settings parallax
+            let offset = (Constants.screenWidth - scrollView.contentOffset.x).magnitude
+            let percents = Double(offset / (Constants.screenWidth / 100))
+            let scaleOffset = CGFloat(maxScaleFactor / 100 * percents)
+            
+            frontLayer.transform = CGAffineTransform(scaleX: 1 + scaleOffset, y: 1 + scaleOffset)
         }
         
         if scrollView == timelineScrollView {
