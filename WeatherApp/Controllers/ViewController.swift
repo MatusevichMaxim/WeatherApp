@@ -139,10 +139,9 @@ extension ViewController : UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView == backgroundScrollView && scrollView.contentOffset.x < UIScreen.main.bounds.width {
-            // settings parallax
-            let offset = (Constants.screenWidth - scrollView.contentOffset.x).magnitude
-            let percents = Double(offset / (Constants.screenWidth / 100))
-            let scaleOffset = CGFloat(maxScaleFactor / 100 * percents)
+            // parallax layers
+            let oppositeOffset = (Constants.screenWidth - scrollView.contentOffset.x).magnitude
+            let scaleOffset = CGFloat(maxScaleFactor / 100 * Double(oppositeOffset / (Constants.screenWidth / 100)))
             
             frontLayer.transform = CGAffineTransform(scaleX: 1 + scaleOffset, y: 1 + scaleOffset)
         }
