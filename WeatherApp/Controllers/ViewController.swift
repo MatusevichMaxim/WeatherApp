@@ -11,10 +11,16 @@ class ViewController: UIViewController {
     var sliderPanel: UIView!
     var timelineCursor: UIView!
     var mainTemperatureLabel: UILabel!
+    var tipTitle: UILabel!
+    var tipLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupScrollContent()
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     private func setupScrollContent() {
@@ -27,7 +33,7 @@ class ViewController: UIViewController {
         let background = UIImage(named: "background")
         interactionBackground = UIImageView()
         backgroundScrollView.addSubview(interactionBackground)
-        interactionBackground.frame = CGRect(x: 0, y: 0, width: Constants.screenWidth * 2, height: Constants.screenHeight - Constants.statusBarHeight)
+        interactionBackground.frame = CGRect(x: 0, y: 0, width: Constants.screenWidth * 2, height: Constants.screenHeight)
         interactionBackground.image = background
         
         // Timeline scrollView //
@@ -59,6 +65,8 @@ class ViewController: UIViewController {
         mainTemperatureLabel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
         mainTemperatureLabel.autoPinEdge(.top, to: .bottom, of: sliderPanel, withOffset: 20)
         mainTemperatureLabel.autoSetDimensions(to: CGSize(width: 120, height: 100))
+        
+        setupTip()
     }
     
     override func viewDidLayoutSubviews() {
@@ -86,6 +94,33 @@ class ViewController: UIViewController {
         timelineCursor.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
         timelineCursor.autoPinEdge(.top, to: .top, of: interactionBackground, withOffset: 150)
         timelineCursor.autoSetDimensions(to: CGSize(width: 90, height: 3))
+    }
+    
+    func setupTip() {
+        tipTitle = UILabel()
+        tipTitle.font = tipTitle.font.withSize(10)
+        tipTitle.text = "Little tip"
+        tipTitle.textColor = .white
+        tipTitle.numberOfLines = 1
+        
+        tipLabel = UILabel()
+        tipLabel.font = tipLabel.font.withSize(36)
+        tipLabel.text = "Don't Let The Outtakes Take You Out"
+        tipLabel.textColor = .white
+        tipLabel.numberOfLines = 3
+        
+//        interactionBackground.addSubview(tipTitle)
+//        interactionBackground.addSubview(tipLabel)
+        
+//        tipLabel.autoPinEdge(.bottom, to: .bottom, of: interactionBackground, withOffset: 100)
+//        tipLabel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
+//        tipLabel.autoPinEdge(.right, to: .right, of: interactionBackground, withOffset: 50)
+//        tipLabel.autoSetDimension(.height, toSize: 50)
+//
+//        tipTitle.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
+//        tipTitle.autoPinEdge(.right, to: .right, of: interactionBackground, withOffset: 50)
+//        tipTitle.autoPinEdge(.bottom, to: .top, of: tipLabel, withOffset: 15)
+//        tipTitle.autoSetDimension(.height, toSize: 150)
     }
 }
 
