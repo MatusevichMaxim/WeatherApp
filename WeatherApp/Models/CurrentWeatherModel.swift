@@ -24,6 +24,8 @@ extension CurrentWeatherModel : JSONDecodable {
 
 extension CurrentWeatherModel {
     var temperatureString: String {
-        return "\(DimensionsManager.convertToCelsius(kelvin: temperature))°"
+        let temperatureInCelsius = DimensionsManager.convertToCelsius(kelvin: temperature)
+        let isNegative = temperatureInCelsius < 0
+        return isNegative ? "-" : "+" + "\(temperatureInCelsius)°"
     }
 }

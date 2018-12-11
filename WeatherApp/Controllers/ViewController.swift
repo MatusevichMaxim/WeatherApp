@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     var sliderPanel: UIView!
     var timelineCursor: UIView!
     var mainTemperatureLabel: UILabel!
-    var tipTitle: UILabel!
     var tipLabel: UILabel!
     
     lazy var weatherManager = APIWeatherManager(apiKey: Constants.apiKey)
@@ -24,6 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupScrollContent()
+        setupTip()
         toggleActivityIndicator(on: true)
         getCurrentWeatherData()
     }
@@ -86,8 +86,6 @@ class ViewController: UIViewController {
         timelineScrollView.delegate = self
         timelineScrollView.showsVerticalScrollIndicator = false
         timelineScrollView.showsHorizontalScrollIndicator = false
-        // if we need to lock bouncing
-        //testSV.bounces = false
         
         let svbg = UIImage(named: "testBG")!
         interactionTimeline = UIView()
@@ -104,13 +102,12 @@ class ViewController: UIViewController {
         mainTemperatureLabel.font = mainTemperatureLabel.font.withSize(72)
         mainTemperatureLabel.textColor = .white
         mainTemperatureLabel.textAlignment = .center
+        mainTemperatureLabel.numberOfLines = 1
+        mainTemperatureLabel.sizeToFit()
         interactionBackground.addSubview(mainTemperatureLabel)
         
         mainTemperatureLabel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
         mainTemperatureLabel.autoPinEdge(.top, to: .bottom, of: sliderPanel, withOffset: 20)
-        mainTemperatureLabel.autoSetDimensions(to: CGSize(width: 120, height: 100))
-        
-        setupTip()
     }
     
     override func viewDidLayoutSubviews() {
@@ -131,40 +128,34 @@ class ViewController: UIViewController {
         interactionBackground.addSubview(timelineCursor)
         
         sliderPanel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
-        sliderPanel.autoPinEdge(.top, to: .top, of: interactionBackground, withOffset: 150)
+        sliderPanel.autoPinEdge(.top, to: .top, of: interactionBackground, withOffset: 120)
         sliderPanel.autoPinEdge(toSuperviewEdge: .right)
         sliderPanel.autoSetDimension(.height, toSize: 3)
         
         timelineCursor.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
-        timelineCursor.autoPinEdge(.top, to: .top, of: interactionBackground, withOffset: 150)
+        timelineCursor.autoPinEdge(.top, to: .top, of: sliderPanel)
         timelineCursor.autoSetDimensions(to: CGSize(width: 90, height: 3))
     }
     
     func setupTip() {
-        tipTitle = UILabel()
-        tipTitle.font = tipTitle.font.withSize(10)
-        tipTitle.text = "Little tip"
-        tipTitle.textColor = .white
-        tipTitle.numberOfLines = 1
-        
         tipLabel = UILabel()
-        tipLabel.font = tipLabel.font.withSize(36)
-        tipLabel.text = "Don't Let The Outtakes Take You Out"
         tipLabel.textColor = .white
-        tipLabel.numberOfLines = 3
+        tipLabel.numberOfLines = 4
+        tipLabel.sizeToFit()
+        interactionBackground.addSubview(tipLabel)
         
-//        interactionBackground.addSubview(tipTitle)
-//        interactionBackground.addSubview(tipLabel)
+        let title = "Little tip"
+        let description = "Grab Your Umbrella"
+        let stringLabelText = "\(title)\n\(description)"
+        let attributedString = NSMutableAttributedString(string: stringLabelText)
         
-//        tipLabel.autoPinEdge(.bottom, to: .bottom, of: interactionBackground, withOffset: 100)
-//        tipLabel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
-//        tipLabel.autoPinEdge(.right, to: .right, of: interactionBackground, withOffset: 50)
-//        tipLabel.autoSetDimension(.height, toSize: 50)
-//
-//        tipTitle.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
-//        tipTitle.autoPinEdge(.right, to: .right, of: interactionBackground, withOffset: 50)
-//        tipTitle.autoPinEdge(.bottom, to: .top, of: tipLabel, withOffset: 15)
-//        tipTitle.autoSetDimension(.height, toSize: 150)
+        attributedString.addAttribute(NSAttributedString.Key.font, value: tipLabel.font.withSize(15), range: (stringLabelText as NSString).range(of: title))
+        attributedString.addAttribute(NSAttributedString.Key.font, value: tipLabel.font.withSize(42), range: (stringLabelText as NSString).range(of: description))
+        tipLabel.attributedText = attributedString
+        
+        tipLabel.autoPinEdge(.bottom, to: .bottom, of: interactionBackground, withOffset: -100)
+        tipLabel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
+        tipLabel.autoPinEdge(.right, to: .right, of: interactionBackground, withOffset: -50)
     }
 }
 
