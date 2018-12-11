@@ -10,13 +10,13 @@ enum ForecastType : FinalURLPoint {
     case Current(apiKey: String, coordinates: Coordinates)
     
     var baseURL: URL {
-        return URL(string: "https://api.darksky.net")!
+        return URL(string: "https://api.openweathermap.org")!
     }
     
     var path: String {
         switch self {
             case .Current(let apiKey, let coordinates):
-                return "/forecast/\(apiKey)/\(coordinates.latitude),\(coordinates.longitude)"
+                return "/data/2.5/weather?lat=\(coordinates.latitude)&lon=\(coordinates.longitude)&appid=\(apiKey)"
         }
     }
     
@@ -47,7 +47,7 @@ final class APIWeatherManager : APIManager {
         let request = ForecastType.Current(apiKey: self.apiKey, coordinates: coordinates).request
         
         fetch(request: request, parse: { (json) -> CurrentWeatherModel? in
-            if let dictionary = json["currently"] as? [String: AnyObject] {
+            if let dictionary = json["main"] as? [String: AnyObject] {
                 return CurrentWeatherModel(JSON: dictionary)
             } else {
                 return nil
