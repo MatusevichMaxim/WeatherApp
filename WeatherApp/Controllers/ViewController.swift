@@ -24,6 +24,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var tipLabel: UILabel!
     var locationManager = CLLocationManager()
     
+    var additionalHour: Int = 0
     var timelineIntervalStartValue: CGFloat = 0
     var timelineCommonInterval: CGFloat?
     
@@ -117,6 +118,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         dateTimeLabel.autoPinEdge(.top, to: .top, of: interactionBackground, withOffset: UIDevice.getGeneration() == .XGeneration ? 88 : 56)
         dateTimeLabel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
+        dateTimeLabel.autoPinEdge(.right, to: .right, of: interactionBackground, withOffset: -30)
         
         setupTimeSlider()
         
@@ -254,12 +256,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func getTime(needIncValue: Bool) {
         if needIncValue {
             timelineIntervalStartValue += timelineCommonInterval!
-            print("increase")
+            additionalHour += 1
         }
         else {
             timelineIntervalStartValue -= timelineCommonInterval!
-            print("sub")
+            additionalHour -= 1
         }
+        dateTimeLabel.text = DateManager.getDate(adjHours: additionalHour)
     }
 }
 

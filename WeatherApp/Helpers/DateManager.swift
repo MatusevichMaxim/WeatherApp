@@ -1,9 +1,10 @@
 import UIKit
 
-class DateManager: NSObject {
+class DateManager {
+    static let currentDate = Date()
+    static let calendar = Calendar.current
+    
     static func getDate(adjHours: Int = 0) -> String {
-        let currentDate = Date()
-        let calendar = Calendar.current
         let date = calendar.date(byAdding: .hour, value: adjHours, to: currentDate)!
         let targetDateString = "\(date.dayMedium) \(date.monthMedium.lowercased()) \(date.yearMedium)  ·  \(date.hourMedium):\(date.minuteMedium)"
 
