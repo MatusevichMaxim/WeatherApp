@@ -4,7 +4,7 @@ import Foundation
 struct CurrentWeatherModel {
     let temperature: Double
     let pressure: Double
-//    let icon: UIImage
+    //let icon: UIImage
 }
 
 extension CurrentWeatherModel : JSONDecodable {
@@ -14,18 +14,19 @@ extension CurrentWeatherModel : JSONDecodable {
             return nil
         }
         
-//        let icon = WeatherIconManager(rawValue: iconString).image
+        //let icon = WeatherIconManager(rawValue: iconString).image
         
         self.temperature = temperature
         self.pressure = pressure
-//        self.icon = icon
+        //self.icon = icon
     }
 }
 
 extension CurrentWeatherModel {
     var temperatureString: String {
         let temperatureInCelsius = DimensionsManager.convertToCelsius(kelvin: temperature)
-        let isNegative = temperatureInCelsius < 0
-        return isNegative ? "-" : "+" + "\(temperatureInCelsius)°"
+//        let isNegative = temperatureInCelsius < 0
+//        return isNegative ? "-" : "+" + "\(temperatureInCelsius)°"
+        return "\(temperatureInCelsius)°"
     }
 }

@@ -8,11 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		4E0B8AFB5C0098A1EC5FCABF /* Pods_WeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833DEC3195EE2F04CBFBD963 /* Pods_WeatherApp.framework */; };
+		8B1D0BAD21BFE2A800CC52DE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D0BAF21BFE2A800CC52DE /* Localizable.strings */; };
 		8B2505C221B7F7C8009760B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2505C121B7F7C8009760B2 /* AppDelegate.swift */; };
 		8B2505C421B7F7C8009760B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2505C321B7F7C8009760B2 /* ViewController.swift */; };
 		8B2505C721B7F7C8009760B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2505C521B7F7C8009760B2 /* Main.storyboard */; };
 		8B2505CA21B7F7C8009760B2 /* WeatherApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B2505C821B7F7C8009760B2 /* WeatherApp.xcdatamodeld */; };
 		8B2505CF21B7F7CA009760B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2505CD21B7F7CA009760B2 /* LaunchScreen.storyboard */; };
+		8B57F3D621C2373600E4732E /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B57F3D521C2373600E4732E /* DeviceManager.swift */; };
+		8B57F3DE21C2409900E4732E /* Geomanist-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B57F3DC21C23EB100E4732E /* Geomanist-Black.otf */; };
+		8B57F3DF21C2409900E4732E /* Geomanist-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B57F3DD21C23EB100E4732E /* Geomanist-Bold.otf */; };
+		8B57F3E021C2409900E4732E /* Geomanist-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B57F3D721C23EB100E4732E /* Geomanist-Book.otf */; };
+		8B57F3E121C2409900E4732E /* Geomanist-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B57F3D821C23EB100E4732E /* Geomanist-ExtraLight.otf */; };
+		8B57F3E221C2409900E4732E /* Geomanist-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B57F3DA21C23EB100E4732E /* Geomanist-Light.otf */; };
+		8B57F3E321C2409900E4732E /* Geomanist-Regular-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B57F3D921C23EB100E4732E /* Geomanist-Regular-Italic.otf */; };
+		8B57F3E421C2409900E4732E /* Geomanist-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B57F3DB21C23EB100E4732E /* Geomanist-Regular.otf */; };
 		8B5824E721B914C600664094 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5824E621B914C600664094 /* Constants.swift */; };
 		8BF5757721BE7B2600726056 /* CurrentWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF5757621BE7B2600726056 /* CurrentWeatherModel.swift */; };
 		8BF5757921BE7C7C00726056 /* WeatherIconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF5757821BE7C7C00726056 /* WeatherIconManager.swift */; };
@@ -27,6 +36,10 @@
 		0FE1238C624D24340832339F /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		29A752528077ECF1A66DA6AA /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		833DEC3195EE2F04CBFBD963 /* Pods_WeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1D0BAE21BFE2A800CC52DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8B1D0BB021BFE3A200CC52DE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		8B1D0BB121BFE3A200CC52DE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		8B1D0BB221BFE3A300CC52DE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8B2505BE21B7F7C8009760B2 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B2505C121B7F7C8009760B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B2505C321B7F7C8009760B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +47,14 @@
 		8B2505C921B7F7C8009760B2 /* WeatherApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeatherApp.xcdatamodel; sourceTree = "<group>"; };
 		8B2505CE21B7F7CA009760B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B2505D021B7F7CA009760B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B57F3D521C2373600E4732E /* DeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
+		8B57F3D721C23EB100E4732E /* Geomanist-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geomanist-Book.otf"; path = "../../../../../Geomanist-Book.otf"; sourceTree = "<group>"; };
+		8B57F3D821C23EB100E4732E /* Geomanist-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geomanist-ExtraLight.otf"; path = "../../../../../Geomanist-ExtraLight.otf"; sourceTree = "<group>"; };
+		8B57F3D921C23EB100E4732E /* Geomanist-Regular-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geomanist-Regular-Italic.otf"; path = "../../../../../Geomanist-Regular-Italic.otf"; sourceTree = "<group>"; };
+		8B57F3DA21C23EB100E4732E /* Geomanist-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geomanist-Light.otf"; path = "../../../../../Geomanist-Light.otf"; sourceTree = "<group>"; };
+		8B57F3DB21C23EB100E4732E /* Geomanist-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geomanist-Regular.otf"; path = "../../../../../Geomanist-Regular.otf"; sourceTree = "<group>"; };
+		8B57F3DC21C23EB100E4732E /* Geomanist-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geomanist-Black.otf"; path = "../../../../../Geomanist-Black.otf"; sourceTree = "<group>"; };
+		8B57F3DD21C23EB100E4732E /* Geomanist-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geomanist-Bold.otf"; path = "../../../../../Geomanist-Bold.otf"; sourceTree = "<group>"; };
 		8B5824E621B914C600664094 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8BF5757621BE7B2600726056 /* CurrentWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherModel.swift; sourceTree = "<group>"; };
 		8BF5757821BE7C7C00726056 /* WeatherIconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherIconManager.swift; sourceTree = "<group>"; };
@@ -125,9 +146,12 @@
 		8B5824E521B9131400664094 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				8BF5757A21BE8DB900726056 /* APIManager.swift */,
+				8BF5757E21BE973700726056 /* APIWeatherManager.swift */,
 				8B5824E621B914C600664094 /* Constants.swift */,
 				8BF5757C21BE916600726056 /* ErrorManager.swift */,
 				8BF5758221BEA63A00726056 /* DimensionsManager.swift */,
+				8B57F3D521C2373600E4732E /* DeviceManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -147,6 +171,7 @@
 				8B2505C121B7F7C8009760B2 /* AppDelegate.swift */,
 				8B2505D021B7F7CA009760B2 /* Info.plist */,
 				8B2505C821B7F7C8009760B2 /* WeatherApp.xcdatamodeld */,
+				8B1D0BAF21BFE2A800CC52DE /* Localizable.strings */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -161,8 +186,13 @@
 		8B5824EB21B920EB00664094 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8BF5757A21BE8DB900726056 /* APIManager.swift */,
-				8BF5757E21BE973700726056 /* APIWeatherManager.swift */,
+				8B57F3DC21C23EB100E4732E /* Geomanist-Black.otf */,
+				8B57F3DD21C23EB100E4732E /* Geomanist-Bold.otf */,
+				8B57F3D721C23EB100E4732E /* Geomanist-Book.otf */,
+				8B57F3D821C23EB100E4732E /* Geomanist-ExtraLight.otf */,
+				8B57F3DA21C23EB100E4732E /* Geomanist-Light.otf */,
+				8B57F3D921C23EB100E4732E /* Geomanist-Regular-Italic.otf */,
+				8B57F3DB21C23EB100E4732E /* Geomanist-Regular.otf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -220,6 +250,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 8B2505B521B7F7C8009760B2;
 			productRefGroup = 8B2505BF21B7F7C8009760B2 /* Products */;
@@ -236,9 +267,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B57F3DF21C2409900E4732E /* Geomanist-Bold.otf in Resources */,
 				8BF5758121BEA2D900726056 /* Asset.xcassets in Resources */,
+				8B57F3DE21C2409900E4732E /* Geomanist-Black.otf in Resources */,
+				8B57F3E021C2409900E4732E /* Geomanist-Book.otf in Resources */,
+				8B1D0BAD21BFE2A800CC52DE /* Localizable.strings in Resources */,
+				8B57F3E221C2409900E4732E /* Geomanist-Light.otf in Resources */,
+				8B57F3E321C2409900E4732E /* Geomanist-Regular-Italic.otf in Resources */,
 				8B2505CF21B7F7CA009760B2 /* LaunchScreen.storyboard in Resources */,
 				8B2505C721B7F7C8009760B2 /* Main.storyboard in Resources */,
+				8B57F3E421C2409900E4732E /* Geomanist-Regular.otf in Resources */,
+				8B57F3E121C2409900E4732E /* Geomanist-ExtraLight.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +342,7 @@
 				8BF5757D21BE916600726056 /* ErrorManager.swift in Sources */,
 				8BF5757B21BE8DB900726056 /* APIManager.swift in Sources */,
 				8BF5758321BEA63A00726056 /* DimensionsManager.swift in Sources */,
+				8B57F3D621C2373600E4732E /* DeviceManager.swift in Sources */,
 				8BF5757921BE7C7C00726056 /* WeatherIconManager.swift in Sources */,
 				8B2505CA21B7F7C8009760B2 /* WeatherApp.xcdatamodeld in Sources */,
 				8BF5757721BE7B2600726056 /* CurrentWeatherModel.swift in Sources */,
@@ -316,10 +356,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		8B1D0BAF21BFE2A800CC52DE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B1D0BAE21BFE2A800CC52DE /* en */,
+				8B1D0BB221BFE3A300CC52DE /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		8B2505C521B7F7C8009760B2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8B2505C621B7F7C8009760B2 /* Base */,
+				8B1D0BB021BFE3A200CC52DE /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -328,6 +378,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8B2505CE21B7F7CA009760B2 /* Base */,
+				8B1D0BB121BFE3A200CC52DE /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -339,6 +390,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -400,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

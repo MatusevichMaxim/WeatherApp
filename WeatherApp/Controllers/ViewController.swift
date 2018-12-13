@@ -1,7 +1,8 @@
 import UIKit
 import PureLayout
+import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var backgroundScrollView: UIScrollView!
     
@@ -15,17 +16,17 @@ class ViewController: UIViewController {
     var timelineCursor: UIView!
     var mainTemperatureLabel: UILabel!
     var tipLabel: UILabel!
+    var locationManager = CLLocationManager()
     
     lazy var weatherManager = APIWeatherManager(apiKey: Constants.apiKey)
-    // need to get real data
-    let coordinates = Coordinates(latitude: 53.906411, longitude: 27.532324)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        enableLocationServices()
+        
         setupScrollContent()
         setupTip()
         toggleActivityIndicator(on: true)
-        getCurrentWeatherData()
     }
     
     func toggleActivityIndicator(on: Bool) {
@@ -36,7 +37,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func getCurrentWeatherData() {
+    func getCurrentWeatherData(coordinates: Coordinates) {
         weatherManager.fetchCurrentWeatherWith(coordinates: coordinates) { (result) in
             self.toggleActivityIndicator(on: false)
             switch result {
@@ -99,7 +100,7 @@ class ViewController: UIViewController {
         setupTimeSlider()
         
         mainTemperatureLabel = UILabel()
-        mainTemperatureLabel.font = mainTemperatureLabel.font.withSize(72)
+        mainTemperatureLabel.font = UIFont(name: "Geomanist-Bold", size: 80)
         mainTemperatureLabel.textColor = .white
         mainTemperatureLabel.textAlignment = .center
         mainTemperatureLabel.numberOfLines = 1
@@ -108,6 +109,7 @@ class ViewController: UIViewController {
         
         mainTemperatureLabel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
         mainTemperatureLabel.autoPinEdge(.top, to: .bottom, of: sliderPanel, withOffset: 20)
+        mainTemperatureLabel.autoSetDimension(.height, toSize: 96)
     }
     
     override func viewDidLayoutSubviews() {
@@ -128,7 +130,7 @@ class ViewController: UIViewController {
         interactionBackground.addSubview(timelineCursor)
         
         sliderPanel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
-        sliderPanel.autoPinEdge(.top, to: .top, of: interactionBackground, withOffset: 120)
+        sliderPanel.autoPinEdge(.top, to: .top, of: interactionBackground, withOffset: UIDevice.getGeneration() == .XGeneration ? 136 : 92)
         sliderPanel.autoPinEdge(toSuperviewEdge: .right)
         sliderPanel.autoSetDimension(.height, toSize: 3)
         
@@ -144,8 +146,8 @@ class ViewController: UIViewController {
         tipLabel.sizeToFit()
         interactionBackground.addSubview(tipLabel)
         
-        let title = "Little tip"
-        let description = "Grab Your Umbrella"
+        let title = NSLocalizedString("little_tip", comment: "")
+        let description = NSLocalizedString("grab_u_umbrella", comment: "")
         let stringLabelText = "\(title)\n\(description)"
         let attributedString = NSMutableAttributedString(string: stringLabelText)
         
@@ -156,6 +158,23 @@ class ViewController: UIViewController {
         tipLabel.autoPinEdge(.bottom, to: .bottom, of: interactionBackground, withOffset: -100)
         tipLabel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
         tipLabel.autoPinEdge(.right, to: .right, of: interactionBackground, withOffset: -50)
+    }
+    
+    func enableLocationServices() {
+        locationManager.requestAlwaysAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        locationManager.stopUpdatingLocation()
+        let locValue: CLLocationCoordinate2D = manager.location!.coordinate
+        let coordinates = Coordinates(latitude: locValue.latitude, longitude: locValue.longitude)
+        getCurrentWeatherData(coordinates: coordinates)
     }
 }
 
