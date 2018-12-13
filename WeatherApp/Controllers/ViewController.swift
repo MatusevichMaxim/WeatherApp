@@ -8,6 +8,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     let maxScaleFactor: Double = 0.5
     let sliderWidth: CGFloat = 1600
+    let requiredHours: Int = 8
     
     var timelineScrollView: UIScrollView!
     var interactionBackground: UIImageView!
@@ -23,10 +24,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var tipLabel: UILabel!
     var locationManager = CLLocationManager()
     
+    var timelineIntervalStartValue: CGFloat = 0
+    var timelineCommonInterval: CGFloat?
+    
     lazy var weatherManager = APIWeatherManager(apiKey: Constants.apiKey)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        timelineCommonInterval = sliderWidth / CGFloat(requiredHours)
         enableLocationServices()
         
         setupScrollContent()
@@ -104,7 +109,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         dateTimeLabel = UILabel()
         dateTimeLabel.font = UIFont(name: "Geomanist-Regular", size: 18)
-        dateTimeLabel.text = "12 july 2018  ·  12:34"
+        dateTimeLabel.text = DateManager.getDate()
         dateTimeLabel.textColor = .white
         dateTimeLabel.numberOfLines = 1
         dateTimeLabel.sizeToFit()
@@ -245,6 +250,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         let coordinates = Coordinates(latitude: locValue.latitude, longitude: locValue.longitude)
         getCurrentWeatherData(coordinates: coordinates)
     }
+    
+    func getTime(needIncValue: Bool) {
+        if needIncValue {
+            timelineIntervalStartValue += timelineCommonInterval!
+            print("increase")
+        }
+        else {
+            timelineIntervalStartValue -= timelineCommonInterval!
+            print("sub")
+        }
+    }
 }
 
 extension ViewController : UIScrollViewDelegate {
@@ -262,6 +278,14 @@ extension ViewController : UIScrollViewDelegate {
             // cursor |       ---=======-----------------|
             let newCursorLocation = CGPoint(x: (UIScreen.main.bounds.width + 50) + scrollView.contentOffset.x * (sliderPanel.frame.width / sliderWidth), y: timelineCursor.frame.origin.y)
             timelineCursor.frame = CGRect(origin: newCursorLocation, size: timelineCursor.frame.size)
+            
+            if scrollView.contentOffset.x < timelineIntervalStartValue && timelineIntervalStartValue != 0 {
+                getTime(needIncValue: false)
+            }
+            
+            if scrollView.contentOffset.x > timelineIntervalStartValue + timelineCommonInterval! {
+                getTime(needIncValue: true)
+            }
         }
     }
 }

@@ -23,6 +23,7 @@
 		8B62DDA821C260A9002330E9 /* Geomanist-Regular-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B62DDA121C260A8002330E9 /* Geomanist-Regular-Italic.otf */; };
 		8B62DDA921C260A9002330E9 /* Geomanist-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B62DDA221C260A8002330E9 /* Geomanist-Regular.otf */; };
 		8B62DDAA21C260A9002330E9 /* Geomanist-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B62DDA321C260A8002330E9 /* Geomanist-ExtraLight.otf */; };
+		8B62DDAC21C2833E002330E9 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B62DDAB21C2833E002330E9 /* DateManager.swift */; };
 		8BF5757721BE7B2600726056 /* CurrentWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF5757621BE7B2600726056 /* CurrentWeatherModel.swift */; };
 		8BF5757921BE7C7C00726056 /* WeatherIconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF5757821BE7C7C00726056 /* WeatherIconManager.swift */; };
 		8BF5757B21BE8DB900726056 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF5757A21BE8DB900726056 /* APIManager.swift */; };
@@ -56,6 +57,7 @@
 		8B62DDA121C260A8002330E9 /* Geomanist-Regular-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geomanist-Regular-Italic.otf"; sourceTree = "<group>"; };
 		8B62DDA221C260A8002330E9 /* Geomanist-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geomanist-Regular.otf"; sourceTree = "<group>"; };
 		8B62DDA321C260A8002330E9 /* Geomanist-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geomanist-ExtraLight.otf"; sourceTree = "<group>"; };
+		8B62DDAB21C2833E002330E9 /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		8BF5757621BE7B2600726056 /* CurrentWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherModel.swift; sourceTree = "<group>"; };
 		8BF5757821BE7C7C00726056 /* WeatherIconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherIconManager.swift; sourceTree = "<group>"; };
 		8BF5757A21BE8DB900726056 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				8BF5757C21BE916600726056 /* ErrorManager.swift */,
 				8BF5758221BEA63A00726056 /* DimensionsManager.swift */,
 				8B57F3D521C2373600E4732E /* DeviceManager.swift */,
+				8B62DDAB21C2833E002330E9 /* DateManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BF5757D21BE916600726056 /* ErrorManager.swift in Sources */,
+				8B62DDAC21C2833E002330E9 /* DateManager.swift in Sources */,
 				8BF5757B21BE8DB900726056 /* APIManager.swift in Sources */,
 				8BF5758321BEA63A00726056 /* DimensionsManager.swift in Sources */,
 				8B57F3D621C2373600E4732E /* DeviceManager.swift in Sources */,
