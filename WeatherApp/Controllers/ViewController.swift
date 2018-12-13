@@ -6,7 +6,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var backgroundScrollView: UIScrollView!
     
-    let maxScaleFactor : Double = 0.5
+    let maxScaleFactor: Double = 0.5
+    let sliderWidth: CGFloat = 1600
     
     var timelineScrollView: UIScrollView!
     var interactionBackground: UIImageView!
@@ -14,7 +15,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var interactionTimeline: UIView!
     var sliderPanel: UIView!
     var timelineCursor: UIView!
+    var nextTipButtonArea: UIView!
+    var dateTimeLabel: UILabel!
     var mainTemperatureLabel: UILabel!
+    var temperatureSign: UILabel!
+    var conditionLabel: UILabel!
     var tipLabel: UILabel!
     var locationManager = CLLocationManager()
     
@@ -92,10 +97,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         interactionTimeline = UIView()
         interactionTimeline.alpha = 0
         timelineScrollView.addSubview(interactionTimeline)
-        interactionTimeline.frame = CGRect(x: 0, y: 0, width: Constants.screenWidth * 4, height: Constants.screenHeight)
+        interactionTimeline.frame = CGRect(x: 0, y: 0, width: sliderWidth, height: Constants.screenHeight)
         interactionTimeline.backgroundColor = UIColor(patternImage: svbg)
         
         backgroundScrollView.addSubview(timelineScrollView)
+        
+        dateTimeLabel = UILabel()
+        dateTimeLabel.font = UIFont(name: "Geomanist-Regular", size: 18)
+        dateTimeLabel.text = "12 july 2018  ·  12:34"
+        dateTimeLabel.textColor = .white
+        dateTimeLabel.numberOfLines = 1
+        dateTimeLabel.sizeToFit()
+        interactionBackground.addSubview(dateTimeLabel)
+        
+        dateTimeLabel.autoPinEdge(.top, to: .top, of: interactionBackground, withOffset: UIDevice.getGeneration() == .XGeneration ? 88 : 56)
+        dateTimeLabel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
         
         setupTimeSlider()
         
@@ -107,9 +123,31 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         mainTemperatureLabel.sizeToFit()
         interactionBackground.addSubview(mainTemperatureLabel)
         
+        temperatureSign = UILabel()
+        temperatureSign.font = UIFont(name: "Geomanist-Bold", size: 30)
+        temperatureSign.text = "o"
+        temperatureSign.textColor = .white
+        temperatureSign.textAlignment = .natural
+        temperatureSign.numberOfLines = 1
+        temperatureSign.sizeToFit()
+        interactionBackground.addSubview(temperatureSign)
+        
+        conditionLabel = UILabel()
+        conditionLabel.font = UIFont(name: "Geomanist-Regular", size: 16)
+        conditionLabel.text = "Partly Cloudly"
+        conditionLabel.textColor = .white
+        conditionLabel.numberOfLines = 2
+        conditionLabel.sizeToFit()
+        interactionBackground.addSubview(conditionLabel)
+        
         mainTemperatureLabel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
-        mainTemperatureLabel.autoPinEdge(.top, to: .bottom, of: sliderPanel, withOffset: 20)
-        mainTemperatureLabel.autoSetDimension(.height, toSize: 96)
+        mainTemperatureLabel.autoPinEdge(.top, to: .bottom, of: sliderPanel, withOffset: 40)
+        
+        temperatureSign.autoPinEdge(.left, to: .right, of: mainTemperatureLabel, withOffset: 7)
+        temperatureSign.autoPinEdge(.top, to: .top, of: mainTemperatureLabel, withOffset: -4)
+        
+        conditionLabel.autoPinEdge(.bottom, to: .bottom, of: mainTemperatureLabel, withOffset: -16)
+        conditionLabel.autoPinEdge(.right, to: .right, of: interactionBackground, withOffset: -30)
     }
     
     override func viewDidLayoutSubviews() {
@@ -121,25 +159,50 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func setupTimeSlider() {
         sliderPanel = UIView()
         sliderPanel.backgroundColor = .black
-        sliderPanel.alpha = 0.2
+        sliderPanel.alpha = 0.1
         
         timelineCursor = UIView()
         timelineCursor.backgroundColor = .white
+        timelineCursor.layer.cornerRadius = 1.5
         
         interactionBackground.addSubview(sliderPanel)
         interactionBackground.addSubview(timelineCursor)
         
         sliderPanel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
-        sliderPanel.autoPinEdge(.top, to: .top, of: interactionBackground, withOffset: UIDevice.getGeneration() == .XGeneration ? 136 : 92)
+        sliderPanel.autoPinEdge(.top, to: .bottom, of: dateTimeLabel, withOffset: 24)
         sliderPanel.autoPinEdge(toSuperviewEdge: .right)
-        sliderPanel.autoSetDimension(.height, toSize: 3)
+        sliderPanel.autoSetDimension(.height, toSize: 1)
         
         timelineCursor.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
-        timelineCursor.autoPinEdge(.top, to: .top, of: sliderPanel)
+        timelineCursor.autoPinEdge(.top, to: .top, of: sliderPanel, withOffset: -1)
         timelineCursor.autoSetDimensions(to: CGSize(width: 90, height: 3))
     }
     
     func setupTip() {
+        nextTipButtonArea = UIView()
+        nextTipButtonArea.sizeToFit()
+        interactionBackground.addSubview(nextTipButtonArea)
+        nextTipButtonArea.autoPinEdge(.right, to: .right, of: interactionBackground, withOffset: -30)
+        nextTipButtonArea.autoPinEdge(.bottom, to: .bottom, of: interactionBackground, withOffset: UIDevice.getGeneration() == .XGeneration ? -48 : -30)
+        
+        let nextTipArrow = UIImageView(image: UIImage(named: "rightArrow")!)
+        nextTipArrow.sizeToFit()
+        nextTipButtonArea.addSubview(nextTipArrow)
+        
+        nextTipArrow.autoPinEdge(.right, to: .right, of: nextTipButtonArea)
+        nextTipArrow.autoPinEdge(.bottom, to: .bottom, of: nextTipButtonArea)
+        
+        let nextTipLabel = UILabel()
+        nextTipLabel.font = UIFont(name: "Geomanist-Regular", size: 16)
+        nextTipLabel.text = NSLocalizedString("next_tips", comment: "")
+        nextTipLabel.textColor = .white
+        nextTipLabel.numberOfLines = 1
+        nextTipLabel.sizeToFit()
+        nextTipButtonArea.addSubview(nextTipLabel)
+        
+        nextTipLabel.autoPinEdge(.right, to: .left, of: nextTipArrow, withOffset: -33)
+        nextTipLabel.autoPinEdge(.bottom, to: .bottom, of: nextTipButtonArea)
+        
         tipLabel = UILabel()
         tipLabel.textColor = .white
         tipLabel.numberOfLines = 4
@@ -150,12 +213,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         let description = NSLocalizedString("grab_u_umbrella", comment: "")
         let stringLabelText = "\(title)\n\(description)"
         let attributedString = NSMutableAttributedString(string: stringLabelText)
+        let titleParagraphStyle = NSMutableParagraphStyle()
+        let labelParagraphStyle = NSMutableParagraphStyle()
+        titleParagraphStyle.lineSpacing = 18
+        labelParagraphStyle.lineSpacing = 10
         
-        attributedString.addAttribute(NSAttributedString.Key.font, value: tipLabel.font.withSize(15), range: (stringLabelText as NSString).range(of: title))
-        attributedString.addAttribute(NSAttributedString.Key.font, value: tipLabel.font.withSize(42), range: (stringLabelText as NSString).range(of: description))
+        attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value: labelParagraphStyle, range: NSRange(location: 0, length: attributedString.length))
+        attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value: titleParagraphStyle, range: NSRange(location: 0, length: title.count))
+        attributedString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "Geomanist-Regular", size: 16)!, range: (stringLabelText as NSString).range(of: title))
+        attributedString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "Geomanist-Bold", size: 32)!, range: (stringLabelText as NSString).range(of: description))
         tipLabel.attributedText = attributedString
         
-        tipLabel.autoPinEdge(.bottom, to: .bottom, of: interactionBackground, withOffset: -100)
+        tipLabel.autoPinEdge(.bottom, to: .top, of: nextTipButtonArea, withOffset: -91)
         tipLabel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
         tipLabel.autoPinEdge(.right, to: .right, of: interactionBackground, withOffset: -50)
     }
@@ -191,7 +260,7 @@ extension ViewController : UIScrollViewDelegate {
         
         if scrollView == timelineScrollView {
             // cursor |       ---=======-----------------|
-            let newCursorLocation = CGPoint(x: (UIScreen.main.bounds.width + 50) + scrollView.contentOffset.x * (sliderPanel.frame.width / 1500), y: timelineCursor.frame.origin.y)
+            let newCursorLocation = CGPoint(x: (UIScreen.main.bounds.width + 50) + scrollView.contentOffset.x * (sliderPanel.frame.width / sliderWidth), y: timelineCursor.frame.origin.y)
             timelineCursor.frame = CGRect(origin: newCursorLocation, size: timelineCursor.frame.size)
         }
     }

@@ -26,7 +26,7 @@ extension CurrentWeatherModel {
     var temperatureString: String {
         let temperatureInCelsius = DimensionsManager.convertToCelsius(kelvin: temperature)
 //        let isNegative = temperatureInCelsius < 0
-//        return isNegative ? "-" : "+" + "\(temperatureInCelsius)°"
-        return "\(temperatureInCelsius)°"
+//        return isNegative ? "-" : "+" + "\(temperatureInCelsius)"
+        return "\(temperatureInCelsius)"
     }
 }

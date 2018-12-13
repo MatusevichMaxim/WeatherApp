@@ -79,6 +79,7 @@ public extension UIDevice {
         return modelName == "iPhone X" ||
                modelName == "iPhone XS" ||
                modelName == "iPhone XS Max" ||
-               modelName == "iPhone XR" ? generation.XGeneration : generation.Default
+               modelName == "iPhone XR" ||
+               modelName == "Simulator iPhone X" ? generation.XGeneration : generation.Default
     }
 }
