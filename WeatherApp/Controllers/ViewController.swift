@@ -33,8 +33,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var forecast: Forecast?
     var metadata: RequestMetadata?
     
-    lazy var weatherManager = APIWeatherManager(apiKey: Constants.apiKey)
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         timelineCommonInterval = sliderWidth / CGFloat(requiredHours)
@@ -57,7 +55,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
-    func getCurrentWeatherData(coordinates: Coordinates) {
+    func getCurrentWeatherData(coordinates: CLLocationCoordinate2D) {
         darkSkyClient!.getForecast(latitude: coordinates.latitude, longitude: coordinates.longitude, completion: { (result) -> Void in
             switch result {
             case .success(let currentForecast, let requestMetadata):
@@ -112,12 +110,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         timelineScrollView.showsVerticalScrollIndicator = false
         timelineScrollView.showsHorizontalScrollIndicator = false
         
-        let svbg = UIImage(named: "testBG")!
         interactionTimeline = UIView()
         interactionTimeline.alpha = 0
         timelineScrollView.addSubview(interactionTimeline)
         interactionTimeline.frame = CGRect(x: 0, y: 0, width: sliderWidth, height: Constants.screenHeight)
-        interactionTimeline.backgroundColor = UIColor(patternImage: svbg)
         
         backgroundScrollView.addSubview(timelineScrollView)
         
@@ -130,7 +126,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         interactionBackground.addSubview(dateTimeLabel)
         
         dateTimeLabel.autoPinEdge(.top, to: .top, of: interactionBackground, withOffset: UIDevice.getGeneration() == .XGeneration ? 88 : 56)
-        dateTimeLabel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
+        dateTimeLabel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 40)
         dateTimeLabel.autoPinEdge(.right, to: .right, of: interactionBackground, withOffset: -30)
         
         setupTimeSlider()
@@ -158,7 +154,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         conditionLabel.numberOfLines = 2
         interactionBackground.addSubview(conditionLabel)
         
-        mainTemperatureLabel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
+        mainTemperatureLabel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 40)
         mainTemperatureLabel.autoPinEdge(.top, to: .bottom, of: sliderPanel, withOffset: 40)
         mainTemperatureLabel.autoPinEdge(.right, to: .right, of: interactionBackground, withOffset: -Constants.screenWidth / 2)
         
@@ -188,12 +184,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         interactionBackground.addSubview(sliderPanel)
         interactionBackground.addSubview(timelineCursor)
         
-        sliderPanel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
+        sliderPanel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 40)
         sliderPanel.autoPinEdge(.top, to: .bottom, of: dateTimeLabel, withOffset: 24)
-        sliderPanel.autoPinEdge(toSuperviewEdge: .right)
+        sliderPanel.autoPinEdge(.right, to: .right, of: interactionBackground)
         sliderPanel.autoSetDimension(.height, toSize: 1)
         
-        timelineCursor.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
+        timelineCursor.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 40)
         timelineCursor.autoPinEdge(.top, to: .top, of: sliderPanel, withOffset: -1)
         timelineCursor.autoSetDimensions(to: CGSize(width: 90, height: 3))
     }
@@ -245,8 +241,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         tipLabel.attributedText = attributedString
         
         tipLabel.autoPinEdge(.bottom, to: .top, of: nextTipButtonArea, withOffset: -91)
-        tipLabel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
-        tipLabel.autoPinEdge(.right, to: .right, of: interactionBackground, withOffset: -50)
+        tipLabel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 40)
+        tipLabel.autoPinEdge(.right, to: .right, of: interactionBackground, withOffset: -30)
     }
     
     func enableLocationServices() {
@@ -259,12 +255,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard coordinatesTaken else {
             if let location = locations.first {
+                print("Found user's location: \(location)")
                 locationManager.stopUpdatingLocation()
                 coordinatesTaken = true
-                print("Found user's location: \(location)")
-                let locValue: CLLocationCoordinate2D = manager.location!.coordinate
-                let coordinates = Coordinates(latitude: locValue.latitude, longitude: locValue.longitude)
-                getCurrentWeatherData(coordinates: coordinates)
+                getCurrentWeatherData(coordinates: manager.location!.coordinate)
             }
             return
         }
@@ -303,7 +297,7 @@ extension ViewController : UIScrollViewDelegate {
         
         if scrollView == timelineScrollView {
             // cursor |       ---=======-----------------|
-            let newCursorLocation = CGPoint(x: (UIScreen.main.bounds.width + 50) + scrollView.contentOffset.x * (sliderPanel.frame.width / sliderWidth), y: timelineCursor.frame.origin.y)
+            let newCursorLocation = CGPoint(x: (UIScreen.main.bounds.width + 40) + scrollView.contentOffset.x * (sliderPanel.frame.width / sliderWidth), y: timelineCursor.frame.origin.y)
             timelineCursor.frame = CGRect(origin: newCursorLocation, size: timelineCursor.frame.size)
             
             if scrollView.contentOffset.x < timelineIntervalStartValue && timelineIntervalStartValue != 0 {

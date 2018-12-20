@@ -25,11 +25,6 @@
 		8B62DDA921C260A9002330E9 /* Geomanist-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B62DDA221C260A8002330E9 /* Geomanist-Regular.otf */; };
 		8B62DDAA21C260A9002330E9 /* Geomanist-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B62DDA321C260A8002330E9 /* Geomanist-ExtraLight.otf */; };
 		8B62DDAC21C2833E002330E9 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B62DDAB21C2833E002330E9 /* DateManager.swift */; };
-		8BF5757721BE7B2600726056 /* CurrentWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF5757621BE7B2600726056 /* CurrentWeatherModel.swift */; };
-		8BF5757921BE7C7C00726056 /* WeatherIconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF5757821BE7C7C00726056 /* WeatherIconManager.swift */; };
-		8BF5757B21BE8DB900726056 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF5757A21BE8DB900726056 /* APIManager.swift */; };
-		8BF5757D21BE916600726056 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF5757C21BE916600726056 /* ErrorManager.swift */; };
-		8BF5757F21BE973700726056 /* APIWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF5757E21BE973700726056 /* APIWeatherManager.swift */; };
 		8BF5758121BEA2D900726056 /* Asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF5758021BEA2D900726056 /* Asset.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -59,11 +54,6 @@
 		8B62DDA221C260A8002330E9 /* Geomanist-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geomanist-Regular.otf"; sourceTree = "<group>"; };
 		8B62DDA321C260A8002330E9 /* Geomanist-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geomanist-ExtraLight.otf"; sourceTree = "<group>"; };
 		8B62DDAB21C2833E002330E9 /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
-		8BF5757621BE7B2600726056 /* CurrentWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherModel.swift; sourceTree = "<group>"; };
-		8BF5757821BE7C7C00726056 /* WeatherIconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherIconManager.swift; sourceTree = "<group>"; };
-		8BF5757A21BE8DB900726056 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		8BF5757C21BE916600726056 /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
-		8BF5757E21BE973700726056 /* APIWeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIWeatherManager.swift; sourceTree = "<group>"; };
 		8BF5758021BEA2D900726056 /* Asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Asset.xcassets; path = WeatherApp/Asset.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,8 +114,6 @@
 		8B5824E121B912E900664094 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8BF5757621BE7B2600726056 /* CurrentWeatherModel.swift */,
-				8BF5757821BE7C7C00726056 /* WeatherIconManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -148,10 +136,7 @@
 		8B5824E521B9131400664094 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				8BF5757A21BE8DB900726056 /* APIManager.swift */,
-				8BF5757E21BE973700726056 /* APIWeatherManager.swift */,
 				8B5824E621B914C600664094 /* Constants.swift */,
-				8BF5757C21BE916600726056 /* ErrorManager.swift */,
 				8B57F3D521C2373600E4732E /* DeviceManager.swift */,
 				8B62DDAB21C2833E002330E9 /* DateManager.swift */,
 				8B2B975621CBAF2800D5C955 /* Extensions.swift */,
@@ -344,18 +329,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BF5757D21BE916600726056 /* ErrorManager.swift in Sources */,
 				8B62DDAC21C2833E002330E9 /* DateManager.swift in Sources */,
-				8BF5757B21BE8DB900726056 /* APIManager.swift in Sources */,
 				8B57F3D621C2373600E4732E /* DeviceManager.swift in Sources */,
-				8BF5757921BE7C7C00726056 /* WeatherIconManager.swift in Sources */,
 				8B2505CA21B7F7C8009760B2 /* WeatherApp.xcdatamodeld in Sources */,
-				8BF5757721BE7B2600726056 /* CurrentWeatherModel.swift in Sources */,
 				8B2B975721CBAF2800D5C955 /* Extensions.swift in Sources */,
 				8B2505C421B7F7C8009760B2 /* ViewController.swift in Sources */,
 				8B2505C221B7F7C8009760B2 /* AppDelegate.swift in Sources */,
 				8B5824E721B914C600664094 /* Constants.swift in Sources */,
-				8BF5757F21BE973700726056 /* APIWeatherManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
