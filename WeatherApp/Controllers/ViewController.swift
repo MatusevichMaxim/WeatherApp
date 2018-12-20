@@ -237,20 +237,23 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func enableLocationServices() {
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestAlwaysAuthorization()
-        
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-            locationManager.startUpdatingLocation()
-        }
+        locationManager.requestLocation()
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        locationManager.stopUpdatingLocation()
-        let locValue: CLLocationCoordinate2D = manager.location!.coordinate
-        let coordinates = Coordinates(latitude: locValue.latitude, longitude: locValue.longitude)
-        getCurrentWeatherData(coordinates: coordinates)
+        if let location = locations.first {
+            print("Found user's location: \(location)")
+            let locValue: CLLocationCoordinate2D = manager.location!.coordinate
+            let coordinates = Coordinates(latitude: locValue.latitude, longitude: locValue.longitude)
+            getCurrentWeatherData(coordinates: coordinates)
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Failed to find user's location: \(error.localizedDescription)")
     }
     
     func getTime(needIncValue: Bool) {

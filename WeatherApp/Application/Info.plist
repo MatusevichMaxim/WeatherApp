@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string></string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Geomanist-Black.otf</string>
@@ -14,8 +12,10 @@
 		<string>Geomanist-Regular-Italic.otf</string>
 		<string>Geomanist-Regular.otf</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Weather APP always needs to know where are you.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>accept to get location</string>
+	<string>Weather APP wants to know where are you.</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>CFBundleDisplayName</key>
