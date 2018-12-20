@@ -22,10 +22,3 @@ extension CurrentWeatherModel : JSONDecodable {
         self.icon = icon
     }
 }
-
-extension CurrentWeatherModel {
-    var temperatureString: String {
-        let temperatureInCelsius = DimensionsManager.convertToCelsius(fahrenheit: Int(round(temperature)))
-        return "\(temperatureInCelsius)"
-    }
-}

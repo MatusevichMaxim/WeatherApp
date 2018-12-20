@@ -1,6 +1,7 @@
 import UIKit
 import PureLayout
 import CoreLocation
+import ForecastIO
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
@@ -27,6 +28,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var additionalHour: Int = 0
     var timelineIntervalStartValue: CGFloat = 0
     var timelineCommonInterval: CGFloat?
+    var coordinatesTaken: Bool = false
+    var darkSkyClient: DarkSkyClient?
+    var forecast: Forecast?
+    var metadata: RequestMetadata?
     
     lazy var weatherManager = APIWeatherManager(apiKey: Constants.apiKey)
     
@@ -34,6 +39,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
         timelineCommonInterval = sliderWidth / CGFloat(requiredHours)
         enableLocationServices()
+        
+        darkSkyClient = DarkSkyClient(apiKey: Constants.apiKey)
+        darkSkyClient!.language = .english
+        darkSkyClient!.units = .us
         
         setupScrollContent()
         setupTip()
@@ -49,23 +58,27 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func getCurrentWeatherData(coordinates: Coordinates) {
-        weatherManager.fetchCurrentWeatherWith(coordinates: coordinates) { (result) in
-            self.toggleActivityIndicator(on: false)
+        darkSkyClient!.getForecast(latitude: coordinates.latitude, longitude: coordinates.longitude, completion: { (result) -> Void in
             switch result {
-            case .Success(let currentWeather):
-                self.updateUIWith(currentWeather: currentWeather)
-            case .Failure(let error as NSError):
+            case .success(let currentForecast, let requestMetadata):
+                self.forecast = currentForecast
+                self.metadata = requestMetadata
+                self.updateUIWith(currentWeather: currentForecast)
+            case .failure(let error as NSError):
                 let alertController = UIAlertController(title: "Unable to get data", message: "\(error.localizedDescription)", preferredStyle: .alert)
                 let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
                 alertController.addAction(okAction)
                 self.present(alertController, animated: true, completion: nil)
             default: break
             }
-        }
+        })
     }
     
-    func updateUIWith(currentWeather: CurrentWeatherModel) {
-        mainTemperatureLabel.text = currentWeather.temperatureString
+    func updateUIWith(currentWeather: Forecast) {
+        DispatchQueue.main.async {
+            self.mainTemperatureLabel.text = String(Int(round((self.forecast?.currently?.temperature?.convertFromFahrenheitToCelsius)!)))
+            self.conditionLabel.text = self.forecast?.currently?.summary
+        }
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -125,9 +138,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         mainTemperatureLabel = UILabel()
         mainTemperatureLabel.font = UIFont(name: "Geomanist-Bold", size: 80)
         mainTemperatureLabel.textColor = .white
-        mainTemperatureLabel.textAlignment = .center
+        mainTemperatureLabel.textAlignment = .left
         mainTemperatureLabel.numberOfLines = 1
-        mainTemperatureLabel.sizeToFit()
         interactionBackground.addSubview(mainTemperatureLabel)
         
         temperatureSign = UILabel()
@@ -137,24 +149,25 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         temperatureSign.textAlignment = .natural
         temperatureSign.numberOfLines = 1
         temperatureSign.sizeToFit()
-        interactionBackground.addSubview(temperatureSign)
+//        interactionBackground.addSubview(temperatureSign)
         
         conditionLabel = UILabel()
         conditionLabel.font = UIFont(name: "Geomanist-Regular", size: 16)
-        conditionLabel.text = "Partly Cloudly"
         conditionLabel.textColor = .white
+        conditionLabel.textAlignment = .right
         conditionLabel.numberOfLines = 2
-        conditionLabel.sizeToFit()
         interactionBackground.addSubview(conditionLabel)
         
         mainTemperatureLabel.autoPinEdge(.left, to: .left, of: interactionBackground, withOffset: Constants.screenWidth + 50)
         mainTemperatureLabel.autoPinEdge(.top, to: .bottom, of: sliderPanel, withOffset: 40)
+        mainTemperatureLabel.autoPinEdge(.right, to: .right, of: interactionBackground, withOffset: -Constants.screenWidth / 2)
         
-        temperatureSign.autoPinEdge(.left, to: .right, of: mainTemperatureLabel, withOffset: 7)
-        temperatureSign.autoPinEdge(.top, to: .top, of: mainTemperatureLabel, withOffset: -4)
+//        temperatureSign.autoPinEdge(.left, to: .right, of: mainTemperatureLabel, withOffset: 7)
+//        temperatureSign.autoPinEdge(.top, to: .top, of: mainTemperatureLabel, withOffset: -4)
         
         conditionLabel.autoPinEdge(.bottom, to: .bottom, of: mainTemperatureLabel, withOffset: -16)
         conditionLabel.autoPinEdge(.right, to: .right, of: interactionBackground, withOffset: -30)
+        conditionLabel.autoPinEdge(.left, to: .right, of: interactionBackground, withOffset: -Constants.screenWidth / 2)
     }
     
     override func viewDidLayoutSubviews() {
@@ -240,15 +253,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestAlwaysAuthorization()
-        locationManager.requestLocation()
+        locationManager.startUpdatingLocation()
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let location = locations.first {
-            print("Found user's location: \(location)")
-            let locValue: CLLocationCoordinate2D = manager.location!.coordinate
-            let coordinates = Coordinates(latitude: locValue.latitude, longitude: locValue.longitude)
-            getCurrentWeatherData(coordinates: coordinates)
+        guard coordinatesTaken else {
+            if let location = locations.first {
+                locationManager.stopUpdatingLocation()
+                coordinatesTaken = true
+                print("Found user's location: \(location)")
+                let locValue: CLLocationCoordinate2D = manager.location!.coordinate
+                let coordinates = Coordinates(latitude: locValue.latitude, longitude: locValue.longitude)
+                getCurrentWeatherData(coordinates: coordinates)
+            }
+            return
         }
     }
     
@@ -266,6 +284,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             additionalHour -= 1
         }
         dateTimeLabel.text = DateManager.getDate(adjHours: additionalHour)
+        
+        mainTemperatureLabel.text = additionalHour == 0 ? String(Int(round((forecast?.currently?.temperature?.convertFromFahrenheitToCelsius)!))) : String(Int(round((forecast?.hourly?.data[additionalHour].temperature?.convertFromFahrenheitToCelsius)!)))
+        conditionLabel.text = additionalHour == 0 ? forecast?.currently?.summary : forecast?.hourly?.data[additionalHour].summary
     }
 }
 
