@@ -1,7 +1,6 @@
 import UIKit
 import PureLayout
 import CoreLocation
-import ForecastIO
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
@@ -29,16 +28,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var timelineIntervalStartValue: CGFloat = 0
     var timelineCommonInterval: CGFloat?
     var coordinatesTaken: Bool = false
-    var darkSkyClient: DarkSkyClient?
-    var forecast: Forecast?
-    var metadata: RequestMetadata?
+    var darkSkyClient: ForecastClient?
+    var forecast: ForecastModel?
+    var metadata: ForecastRequestMetadataModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         timelineCommonInterval = sliderWidth / CGFloat(requiredHours)
         enableLocationServices()
         
-        darkSkyClient = DarkSkyClient(apiKey: Constants.apiKey)
+        darkSkyClient = ForecastClient(apiKey: "")
         darkSkyClient!.language = .english
         darkSkyClient!.units = .us
         
@@ -72,7 +71,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         })
     }
     
-    func updateUIWith(currentWeather: Forecast) {
+    func updateUIWith(currentWeather: ForecastModel) {
         DispatchQueue.main.async {
             self.mainTemperatureLabel.text = String(Int(round((self.forecast?.currently?.temperature?.convertFromFahrenheitToCelsius)!)))
             self.conditionLabel.text = self.forecast?.currently?.summary
