@@ -7,67 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01AA665B49B9E712266BEFC158A941C6 /* CSVImporter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F33A07F32AB5FDE6A83DDFB15F34FA /* CSVImporter-dummy.m */; };
+		007836AEDE9ED0AB39CD24B7B340580A /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = FE394332DD409546E4B2EE24FAFB01CC /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01AA665B49B9E712266BEFC158A941C6 /* CSVImporter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE8A5727F1FB0EB9A867E391518A101 /* CSVImporter-dummy.m */; };
 		03C3B1C4AED81553E923E6D04E569D8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C762CABC9F229C6E5ADF64A1DC64B651 /* Foundation.framework */; };
 		05E076096997F4268F64814BE364CC9D /* HandySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7DD64DAE6EDA3ECF68760361CF8788 /* HandySwift.framework */; };
-		07BA3F1DCEBA3D826FC41F05DCF7DF9B /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = E90C73B19325D1B6ECFBF65DD28F8E29 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1962FA54CC629C0FB8845B9CFCBE419B /* Pods-WeatherApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4791E228C5588DC582AAE0C7CAFA4 /* Pods-WeatherApp-dummy.m */; };
-		19CD508321E619CE38D1998DA70A6020 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4869D692BB1B29CEAA7BAC2B3195BA90 /* Flag.swift */; };
-		1B4434D9803F5CD86BC340400C3B60E3 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D2FF039806C9EB828408EE359D4A21 /* Globals.swift */; };
-		1F2B28CADBC72E1DC3C92E188BBA9662 /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4D4DBA10DF4811930F618ABCCF1D88 /* CollectionExtension.swift */; };
-		203108A88D445A89A81AB510EB78A683 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A0349B6F0C69BDFCC4520277E0EC05 /* Result.swift */; };
-		21E6E35259E8962784FD6DFEC9B7A490 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9E99A712CC3278902EBBFE07EAA16 /* Language.swift */; };
-		3480D5BCC709C99697DED0B99C6D5E9E /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805F365EEF091A73293AB2D22FBAF649 /* Forecast.swift */; };
-		34FA5F8FCB7E2ED4FF963C7E0885D655 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9F5F3907163928F7537AF6B9A9D9C /* Icon.swift */; };
-		37CBBB552EB86D595E1E3409F1D8DB09 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D427CA3F844DF9CAEAF9B5F06B474B /* Regex.swift */; };
-		478823E8072F9BC7A62FF56B1F26091E /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311A2A9F550DEAEF218DF9FDC0F7D5F9 /* ArrayExtension.swift */; };
-		48B5CDB7B8ABCE126FF4A53DB97E22D9 /* CSVImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA4A511123271936B67F76AED8433E9 /* CSVImporter.swift */; };
-		4D2C4EEA8AA9D7CD2543FE7327C76862 /* CSVImporter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9425BDDD9713AE8D50E8B2024455F197 /* CSVImporter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D859150DBAB0304717D36E49BCB0BEA /* ForecastIO-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 569F27CF16095A24D9F35EF19884E6B6 /* ForecastIO-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5197631E0AA917DF4B6DAC2DF5AE266E /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84A3FF86C3C1381F519C05EF92EE389 /* DataPoint.swift */; };
-		530125AA5B18DCE439379EAD478287A2 /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC5B22E97EE4733F80F0364958B181DF /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		53C0701D98663C6F9E873AA28F03AFD4 /* ForecastIOError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08A2402EF79C4BDCEE657866E87A545 /* ForecastIOError.swift */; };
-		5596B249D02DEAEA28DC21C25C7EEFEE /* ForecastIO-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B01463F0682E28D3AA1834379A8DC5 /* ForecastIO-dummy.m */; };
-		5867B09ADFCFAAFD9797DB5667C10629 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3385A7EA063E9BD73480B41B532050C5 /* Weak.swift */; };
-		59AAF44E164F94EC1BDD585978E987ED /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF85990AF4500918F230926F8443C4E5 /* IntExtension.swift */; };
-		5CB8FFD3CA70A0FDC1928E74146983C4 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8567F52E078FC75631FAABBA64F2EE /* NSArray+PureLayout.m */; };
-		6F596BF19FBC841456BD7966BD115B8B /* Pods-WeatherApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 18886651FC5B7480F2F443CA93F6AF50 /* Pods-WeatherApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73A761F2864A478B5AD4B76B39178255 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = B9E69AE3A866BC4745D54D8B9E22A325 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		754242530B87F42F55E9ABC3ACBDD046 /* RequestMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86890EC6997C0B24506C44215238319B /* RequestMetadata.swift */; };
-		7547C7967E16F4A944A4259C9C391B8E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D24D8F0D6665A981BC3629C15E9FB8 /* Alert.swift */; };
-		77BC6D114B2FACE63E4E6CE21C1289A3 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFC3E12CCF70B641E40E67F4F383C9D /* StringExtension.swift */; };
-		79152B2278049A650B3557EB1A1B799D /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5798C20A23C1AE1AC4F9EC3B6D95421A /* PureLayout-dummy.m */; };
-		822F3D0CF4FC8C66CC944E4FBC688284 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CE21FC3A47BE7214B9997EA78D8E25 /* Source.swift */; };
-		8A4FFABB70E8FD25975511E0C5C91181 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A382D4FB77A2639F0196EE74D658A83 /* NSLayoutConstraint+PureLayout.m */; };
-		8FA12AB2EECC2B3A2B1CCB9DB9BEC2F8 /* Unowned.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B409256EE1FEDA72ADEA1DE0DB4487 /* Unowned.swift */; };
-		9052D923187B6530BB901A3C35072EC4 /* TextFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233918E25E3A5A7A8F60EF28757A163 /* TextFile.swift */; };
-		9162D7BCB0344C82BB61492F9AF4C36C /* HandySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC07E03FA12E44B1346AD64E5C013E6E /* HandySwift-dummy.m */; };
-		9A8DD239E56E97245642FCA6E26DEA70 /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD79F0573B102B8360B0F678B56C05D /* TimeIntervalExtension.swift */; };
-		9AEFD805C6DA248883DD4D5E13999DF5 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DDF0CB0AB0CD2B285BD20A4BBEBFBF /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3E22083BD14348352239C3491BAD61D /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99954941A6C692890F96090F8F56E418 /* DataBlock.swift */; };
-		A99FC6F311A31D8E92FAAE88BDD1A54A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C762CABC9F229C6E5ADF64A1DC64B651 /* Foundation.framework */; };
-		AB216F9746B7F657AFCEA023CC3436A7 /* TextFileStreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60941815F5D0828BC949CD109EC14F5F /* TextFileStreamReader.swift */; };
-		B097C3993A69FE6F5B859C0A004A0A58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C762CABC9F229C6E5ADF64A1DC64B651 /* Foundation.framework */; };
-		B12B17C630FDF1E7660D86DBA3C501F4 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435C421AB6DA1C737559DE59DCE020D /* DictionaryExtension.swift */; };
-		B65FBCBDC62DD3226371BAAA6EC58CD0 /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667EBDD9DB271FC31384BDF44533CF15 /* Precipitation.swift */; };
-		BA171AEFB138A8125E3744D0B54E8FB0 /* SortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0087FCFD4F96A0E31527DDA3549C83 /* SortedArray.swift */; };
-		BD6F27FC71BDAE15D2B47734303EBEB9 /* StringSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6393F10500A5E966AE17588ED6CAFF40 /* StringSource.swift */; };
-		C07152E31E33F18ADEE5FCD6E9EBFF6F /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA42B6B707A0B03181AD2B751B3B69C /* ALView+PureLayout.m */; };
-		C45107B0A2A7CACC0C3123500C32144D /* FileSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DAC55559FE7B67C2613B019118588C /* FileSource.swift */; };
-		CA29FFB50753FCFCEAD238FBA275638B /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1BE94619B2E7914E8AFA336CC3D245 /* Units.swift */; };
-		CA3B134E3A6F443A8E7C7433DB4A5EB0 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BF3919937F3F38AE6EED5B78DA63A1 /* Globals.swift */; };
-		CC7B8236F971331BD9FF233528DF0EF0 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F9FA2154C7D5069DE831364BFD90B38 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CFAC919BB0250D7C5C54773F51DF4A01 /* FrequencyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E97BA5D3CA4CEE8E86FA2B38B4DE79 /* FrequencyTable.swift */; };
-		D55664C178882EE2CC34B644714870A5 /* DispatchTimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B6D929B17A4CA40AF933B503FEE353 /* DispatchTimeIntervalExtension.swift */; };
-		D83D13650CB0931C21185E91F7233876 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E609284B9D61436779F352239348052 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E066ACC76672FAE13DF0454C59690FD1 /* HandySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0743C09511D6E6C0DC39D13246947700 /* HandySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3374954BBEED841478810CB66A96CE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C762CABC9F229C6E5ADF64A1DC64B651 /* Foundation.framework */; };
-		F66A99544A749C5BB87DF24D94159319 /* DarkSkyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B066894B651601B8B36217F9D7F2C9D1 /* DarkSkyClient.swift */; };
-		FA9F74046A0C81A4C92859A4580DFC5D /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = EDC9FCED3B4A683B0074020AF9D15C80 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FA2B5A9B92F753A7B85A8642D2150ED /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A50EBFEEA7BFEA92719EEF448167ADA /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		166FA0CDB3DD000719DD9AF610F2ACF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C762CABC9F229C6E5ADF64A1DC64B651 /* Foundation.framework */; };
+		1B4434D9803F5CD86BC340400C3B60E3 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC1571BEFA3A77A8A52D38D929AF1D9 /* Globals.swift */; };
+		1F2B28CADBC72E1DC3C92E188BBA9662 /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF6744A9620604E98CD3DEE1387D204 /* CollectionExtension.swift */; };
+		29A39ECDE881DA0BAB86718F579C36AC /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6262C223150B74C340D5E24F2FE739D6 /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37CBBB552EB86D595E1E3409F1D8DB09 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68C4F73D23A238A60EBF45A18294A89 /* Regex.swift */; };
+		3954F6B3CACD4BCFFF4CDB965AE7E6C9 /* Pods-WeatherApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4791E228C5588DC582AAE0C7CAFA4 /* Pods-WeatherApp-dummy.m */; };
+		478823E8072F9BC7A62FF56B1F26091E /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A378305A43D08FA4508FE71E5ED66 /* ArrayExtension.swift */; };
+		48B5CDB7B8ABCE126FF4A53DB97E22D9 /* CSVImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8037295327C0E61CE2272086613EBE5 /* CSVImporter.swift */; };
+		4D2C4EEA8AA9D7CD2543FE7327C76862 /* CSVImporter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FF62A6FB3EE32D80B2C1DF70DDF7758 /* CSVImporter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5867B09ADFCFAAFD9797DB5667C10629 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766B39506CFB36E0749F0A5381A6BCFB /* Weak.swift */; };
+		59AAF44E164F94EC1BDD585978E987ED /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF51F2BE6970F93287AB4A56E3AA726 /* IntExtension.swift */; };
+		66909619E3714D6FA494BD625B64E1B4 /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B31C1EF3E81FFF20244D0218D86E13A /* PureLayout-dummy.m */; };
+		68997692320E6BBC01C76032E14D6B13 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 19E5159D8C4032631BE071FB47C9F957 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76E95DBF230A91330DD12B0CFD7889E2 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E52AB23B598ADDDBAE5DA04893FAE9B3 /* NSLayoutConstraint+PureLayout.m */; };
+		77BC6D114B2FACE63E4E6CE21C1289A3 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6369453AEDAC17ACFE9A00A794222C1D /* StringExtension.swift */; };
+		822F3D0CF4FC8C66CC944E4FBC688284 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE22DBA1FEB4518A6EAD9F0F042CB73C /* Source.swift */; };
+		895F01A67AFC1FAE6417C5BD95CB9E83 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A143DDE7AB2308604EB2F1130045DB1D /* NSArray+PureLayout.m */; };
+		8A448DA774D87927A234FCD1F3DD5956 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C4D3323084E1393C28426709C359671 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FA12AB2EECC2B3A2B1CCB9DB9BEC2F8 /* Unowned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B61C6F43465EB11E1C5A41302B0200D /* Unowned.swift */; };
+		9052D923187B6530BB901A3C35072EC4 /* TextFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBAC4AC9F237A4A7C32306FF03297BC /* TextFile.swift */; };
+		9162D7BCB0344C82BB61492F9AF4C36C /* HandySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDED0C0B4467761850E161C0005F038 /* HandySwift-dummy.m */; };
+		94E832A3439E99152430EBD8441644B2 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED0EF5B67FBAFADA17057240B5BBE8F /* ALView+PureLayout.m */; };
+		9A8DD239E56E97245642FCA6E26DEA70 /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6910204934066C4DFBFB46414ED5516A /* TimeIntervalExtension.swift */; };
+		A8EBE3B0417BC268FF924069FAABB647 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = CFF4BCC44FB04722EDDF007A533F8F17 /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB216F9746B7F657AFCEA023CC3436A7 /* TextFileStreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34C57E6113E3B4776B6752CC1CA617F /* TextFileStreamReader.swift */; };
+		B12B17C630FDF1E7660D86DBA3C501F4 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA04005F287EAC4A893AC6CAD19871 /* DictionaryExtension.swift */; };
+		BA171AEFB138A8125E3744D0B54E8FB0 /* SortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC4FCCCE0E62C2DE36D707F12B69BE5 /* SortedArray.swift */; };
+		BD6F27FC71BDAE15D2B47734303EBEB9 /* StringSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17496357AFA490E5A01671CDB7ECBB75 /* StringSource.swift */; };
+		C45107B0A2A7CACC0C3123500C32144D /* FileSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E54AD253C40A9EC1424777DE1C7CF /* FileSource.swift */; };
+		C73FDF88128709F46A1527B451C6CE26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C762CABC9F229C6E5ADF64A1DC64B651 /* Foundation.framework */; };
+		CA3B134E3A6F443A8E7C7433DB4A5EB0 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E551262CF383753435C98256EE51B1 /* Globals.swift */; };
+		CFAC919BB0250D7C5C54773F51DF4A01 /* FrequencyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BBC3A9750937E9D9B9CC1AEAF9D0E8 /* FrequencyTable.swift */; };
+		D55664C178882EE2CC34B644714870A5 /* DispatchTimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E6B5A9044D7ECFBC25F0FE8B828B7 /* DispatchTimeIntervalExtension.swift */; };
+		E066ACC76672FAE13DF0454C59690FD1 /* HandySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C32C25201807F98A4429B98D11DBCCB9 /* HandySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDF3823E3D8F2A448FDA0C247A3396D7 /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 33DA8806ABEFA4F24B92579485835FC0 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F45492B7B1E0E600C6E1DB941159411F /* Pods-WeatherApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 18886651FC5B7480F2F443CA93F6AF50 /* Pods-WeatherApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAC28AEE9695F82AF405765FC1ED70DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C762CABC9F229C6E5ADF64A1DC64B651 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		00D36295EF30936D62359B38FC5C18C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09274DC88265D1DE943813AD2A149713;
+			remoteInfo = CSVImporter;
+		};
 		2F30EDF3565A2278DE20E25646083965 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -75,121 +66,87 @@
 			remoteGlobalIDString = E519BB7367ED5F947328D75DDA324F4A;
 			remoteInfo = HandySwift;
 		};
-		4B1BA4EBA9A3F85E83ADD4B9FABD8012 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 09274DC88265D1DE943813AD2A149713;
-			remoteInfo = CSVImporter;
-		};
-		635BC7856DC6E0DBE39634A021A55B68 /* PBXContainerItemProxy */ = {
+		7C9C62E6D570A6D26FC8763763C73DEA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E519BB7367ED5F947328D75DDA324F4A;
 			remoteInfo = HandySwift;
 		};
-		D793F8E2C2A70BC7EA01A3FF0A7CFDBC /* PBXContainerItemProxy */ = {
+		992FD44B475929C9C48B8000371CDA0B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6C2A3E1258B4D43A2A6AA920B19FFBF0;
-			remoteInfo = ForecastIO;
-		};
-		DE7059EAA2033293D9F5199825400B97 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA5C93D903CB541A8AEFDE132C09E425;
+			remoteGlobalIDString = A57FB62DC50E8302472F5CB54F9AAF11;
 			remoteInfo = PureLayout;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		030D0EEE7A3ECCFAC658FACC076DC7C1 /* HandySwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HandySwift.xcconfig; sourceTree = "<group>"; };
-		0743C09511D6E6C0DC39D13246947700 /* HandySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HandySwift-umbrella.h"; sourceTree = "<group>"; };
-		0D033668D07A496FC92206E8B1CE9564 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
-		0F0087FCFD4F96A0E31527DDA3549C83 /* SortedArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SortedArray.swift; path = Frameworks/HandySwift/Structs/SortedArray.swift; sourceTree = "<group>"; };
-		0F9FA2154C7D5069DE831364BFD90B38 /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
-		12E9E99A712CC3278902EBBFE07EAA16 /* Language.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Language.swift; path = Source/Language.swift; sourceTree = "<group>"; };
-		162548D8E004D2E7A2B404AB1665BF91 /* Pods_WeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WeatherApp.framework; path = "Pods-WeatherApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		17859BED5BBFAF8B4B4FBB7CBEA3CF83 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BC1571BEFA3A77A8A52D38D929AF1D9 /* Globals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Globals.swift; path = Frameworks/CSVImporter/Globals.swift; sourceTree = "<group>"; };
+		17496357AFA490E5A01671CDB7ECBB75 /* StringSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringSource.swift; path = Frameworks/CSVImporter/StringSource.swift; sourceTree = "<group>"; };
 		18886651FC5B7480F2F443CA93F6AF50 /* Pods-WeatherApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WeatherApp-umbrella.h"; sourceTree = "<group>"; };
-		1EA4A511123271936B67F76AED8433E9 /* CSVImporter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVImporter.swift; path = Frameworks/CSVImporter/CSVImporter.swift; sourceTree = "<group>"; };
+		19E5159D8C4032631BE071FB47C9F957 /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		1D08692B62354FC6998C87A32D428E3E /* CSVImporter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CSVImporter.modulemap; sourceTree = "<group>"; };
+		207454F86BD8D7AA2A7E2FD3B2EA24FF /* HandySwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HandySwift.xcconfig; sourceTree = "<group>"; };
 		21DF080F8E0627EC1C671C711F5F9B5F /* Pods-WeatherApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WeatherApp.modulemap"; sourceTree = "<group>"; };
-		28DDF0CB0AB0CD2B285BD20A4BBEBFBF /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		2795F58DE64D5084F280AC153651F2A5 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
 		298886DE02BDA4032AAD81D2741E2C62 /* Pods-WeatherApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeatherApp-frameworks.sh"; sourceTree = "<group>"; };
-		2A8567F52E078FC75631FAABBA64F2EE /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
 		2B0506FFDEA45957F72FED02AAA204B4 /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
-		2BEB52023182F7B16AEAFD370A17B425 /* ForecastIO.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ForecastIO.modulemap; sourceTree = "<group>"; };
-		311A2A9F550DEAEF218DF9FDC0F7D5F9 /* ArrayExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = Frameworks/HandySwift/Extensions/ArrayExtension.swift; sourceTree = "<group>"; };
-		3385A7EA063E9BD73480B41B532050C5 /* Weak.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Weak.swift; path = Frameworks/HandySwift/Structs/Weak.swift; sourceTree = "<group>"; };
-		365EAD221AF6C0FE26D0188F9674F6DE /* ForecastIO-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ForecastIO-prefix.pch"; sourceTree = "<group>"; };
-		3CD79F0573B102B8360B0F678B56C05D /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeIntervalExtension.swift; path = Frameworks/HandySwift/Extensions/TimeIntervalExtension.swift; sourceTree = "<group>"; };
-		3EA42B6B707A0B03181AD2B751B3B69C /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
-		40B6D929B17A4CA40AF933B503FEE353 /* DispatchTimeIntervalExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatchTimeIntervalExtension.swift; path = Frameworks/HandySwift/Extensions/DispatchTimeIntervalExtension.swift; sourceTree = "<group>"; };
+		2FDED0C0B4467761850E161C0005F038 /* HandySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HandySwift-dummy.m"; sourceTree = "<group>"; };
+		33DA8806ABEFA4F24B92579485835FC0 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		3B5B13D01BBB76AE1D43A6FBA6D9CA7B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43C0AB95101A3F0997CC787578BDF06C /* HandySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HandySwift-prefix.pch"; sourceTree = "<group>"; };
+		4621F95EF524712E164D0B52D8A94E76 /* CSVImporter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSVImporter-prefix.pch"; sourceTree = "<group>"; };
 		4821343172711C0E4B73EA16F5E0858C /* Pods-WeatherApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WeatherApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4869D692BB1B29CEAA7BAC2B3195BA90 /* Flag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flag.swift; path = Source/Flag.swift; sourceTree = "<group>"; };
 		48E4791E228C5588DC582AAE0C7CAFA4 /* Pods-WeatherApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeatherApp-dummy.m"; sourceTree = "<group>"; };
-		4A382D4FB77A2639F0196EE74D658A83 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
-		5233918E25E3A5A7A8F60EF28757A163 /* TextFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFile.swift; path = Frameworks/CSVImporter/TextFile.swift; sourceTree = "<group>"; };
-		569F27CF16095A24D9F35EF19884E6B6 /* ForecastIO-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ForecastIO-umbrella.h"; sourceTree = "<group>"; };
-		56B01463F0682E28D3AA1834379A8DC5 /* ForecastIO-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ForecastIO-dummy.m"; sourceTree = "<group>"; };
-		5798C20A23C1AE1AC4F9EC3B6D95421A /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
-		5E609284B9D61436779F352239348052 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
-		60941815F5D0828BC949CD109EC14F5F /* TextFileStreamReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFileStreamReader.swift; path = Frameworks/CSVImporter/TextFileStreamReader.swift; sourceTree = "<group>"; };
-		6393F10500A5E966AE17588ED6CAFF40 /* StringSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringSource.swift; path = Frameworks/CSVImporter/StringSource.swift; sourceTree = "<group>"; };
-		667EBDD9DB271FC31384BDF44533CF15 /* Precipitation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Precipitation.swift; path = Source/Precipitation.swift; sourceTree = "<group>"; };
-		67D427CA3F844DF9CAEAF9B5F06B474B /* Regex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Regex.swift; path = Frameworks/HandySwift/Structs/Regex.swift; sourceTree = "<group>"; };
-		6F1BE94619B2E7914E8AFA336CC3D245 /* Units.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Units.swift; path = Source/Units.swift; sourceTree = "<group>"; };
+		4A50EBFEEA7BFEA92719EEF448167ADA /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		4BF6744A9620604E98CD3DEE1387D204 /* CollectionExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionExtension.swift; path = Frameworks/HandySwift/Extensions/CollectionExtension.swift; sourceTree = "<group>"; };
+		4DBAC4AC9F237A4A7C32306FF03297BC /* TextFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFile.swift; path = Frameworks/CSVImporter/TextFile.swift; sourceTree = "<group>"; };
+		51A7EA3D928BC0214B6AEB3DD407BD5B /* CSVImporter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CSVImporter.xcconfig; sourceTree = "<group>"; };
+		546E54AD253C40A9EC1424777DE1C7CF /* FileSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileSource.swift; path = Frameworks/CSVImporter/FileSource.swift; sourceTree = "<group>"; };
+		5C4604A3BE08EBF353EA1147818FB5CD /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		6262C223150B74C340D5E24F2FE739D6 /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
+		6369453AEDAC17ACFE9A00A794222C1D /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = Frameworks/HandySwift/Extensions/StringExtension.swift; sourceTree = "<group>"; };
+		66EA04005F287EAC4A893AC6CAD19871 /* DictionaryExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryExtension.swift; path = Frameworks/HandySwift/Extensions/DictionaryExtension.swift; sourceTree = "<group>"; };
+		6910204934066C4DFBFB46414ED5516A /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeIntervalExtension.swift; path = Frameworks/HandySwift/Extensions/TimeIntervalExtension.swift; sourceTree = "<group>"; };
+		6FF62A6FB3EE32D80B2C1DF70DDF7758 /* CSVImporter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSVImporter-umbrella.h"; sourceTree = "<group>"; };
 		70CC089B3FC4B1A6B612EB505A2736C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72CE21FC3A47BE7214B9997EA78D8E25 /* Source.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Source.swift; path = Frameworks/CSVImporter/Source.swift; sourceTree = "<group>"; };
-		7809FA17B470D60FAB4509CBC91F821E /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PureLayout.modulemap; sourceTree = "<group>"; };
-		805F365EEF091A73293AB2D22FBAF649 /* Forecast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Forecast.swift; path = Source/Forecast.swift; sourceTree = "<group>"; };
+		74589017840D040B96FBF01889E73D90 /* HandySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HandySwift.framework; path = HandySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		766B39506CFB36E0749F0A5381A6BCFB /* Weak.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Weak.swift; path = Frameworks/HandySwift/Structs/Weak.swift; sourceTree = "<group>"; };
+		78BBC3A9750937E9D9B9CC1AEAF9D0E8 /* FrequencyTable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrequencyTable.swift; path = Frameworks/HandySwift/Structs/FrequencyTable.swift; sourceTree = "<group>"; };
+		7B31C1EF3E81FFF20244D0218D86E13A /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
+		7ED0EF5B67FBAFADA17057240B5BBE8F /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
 		815AEF073CFC10DCAF54747B97DC429A /* Pods-WeatherApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeatherApp-resources.sh"; sourceTree = "<group>"; };
-		8435C421AB6DA1C737559DE59DCE020D /* DictionaryExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryExtension.swift; path = Frameworks/HandySwift/Extensions/DictionaryExtension.swift; sourceTree = "<group>"; };
-		86890EC6997C0B24506C44215238319B /* RequestMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestMetadata.swift; path = Source/RequestMetadata.swift; sourceTree = "<group>"; };
-		892BE38EE612087E976DE6941723AD0F /* CSVImporter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CSVImporter.modulemap; sourceTree = "<group>"; };
-		8A85212AA964203E2FA8981ACF51B847 /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ForecastIO.framework; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DFC3E12CCF70B641E40E67F4F383C9D /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = Frameworks/HandySwift/Extensions/StringExtension.swift; sourceTree = "<group>"; };
-		8E4D4DBA10DF4811930F618ABCCF1D88 /* CollectionExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionExtension.swift; path = Frameworks/HandySwift/Extensions/CollectionExtension.swift; sourceTree = "<group>"; };
-		91BF3919937F3F38AE6EED5B78DA63A1 /* Globals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Globals.swift; path = Frameworks/HandySwift/Globals.swift; sourceTree = "<group>"; };
+		8C4D3323084E1393C28426709C359671 /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9425BDDD9713AE8D50E8B2024455F197 /* CSVImporter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSVImporter-umbrella.h"; sourceTree = "<group>"; };
-		95E97BA5D3CA4CEE8E86FA2B38B4DE79 /* FrequencyTable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrequencyTable.swift; path = Frameworks/HandySwift/Structs/FrequencyTable.swift; sourceTree = "<group>"; };
 		97828B66218B25585F1E4649A2AFA66C /* Pods-WeatherApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeatherApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		99954941A6C692890F96090F8F56E418 /* DataBlock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataBlock.swift; path = Source/DataBlock.swift; sourceTree = "<group>"; };
-		A4B409256EE1FEDA72ADEA1DE0DB4487 /* Unowned.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Unowned.swift; path = Frameworks/HandySwift/Structs/Unowned.swift; sourceTree = "<group>"; };
+		9B61C6F43465EB11E1C5A41302B0200D /* Unowned.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Unowned.swift; path = Frameworks/HandySwift/Structs/Unowned.swift; sourceTree = "<group>"; };
+		A143DDE7AB2308604EB2F1130045DB1D /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		A34C57E6113E3B4776B6752CC1CA617F /* TextFileStreamReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFileStreamReader.swift; path = Frameworks/CSVImporter/TextFileStreamReader.swift; sourceTree = "<group>"; };
+		AC2BFEBBFE67BA2188C652104F07C787 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC7DD64DAE6EDA3ECF68760361CF8788 /* HandySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HandySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B066894B651601B8B36217F9D7F2C9D1 /* DarkSkyClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DarkSkyClient.swift; path = Source/DarkSkyClient.swift; sourceTree = "<group>"; };
-		B1798DDA9C0BA84B9DE24F820CB6FEF6 /* HandySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HandySwift.framework; path = HandySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6DAC55559FE7B67C2613B019118588C /* FileSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileSource.swift; path = Frameworks/CSVImporter/FileSource.swift; sourceTree = "<group>"; };
+		ACE8A5727F1FB0EB9A867E391518A101 /* CSVImporter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CSVImporter-dummy.m"; sourceTree = "<group>"; };
+		AF5E6B5A9044D7ECFBC25F0FE8B828B7 /* DispatchTimeIntervalExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatchTimeIntervalExtension.swift; path = Frameworks/HandySwift/Extensions/DispatchTimeIntervalExtension.swift; sourceTree = "<group>"; };
+		B7E551262CF383753435C98256EE51B1 /* Globals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Globals.swift; path = Frameworks/HandySwift/Globals.swift; sourceTree = "<group>"; };
 		B8162A2625EE65CB9B5006CA4DB8ACF0 /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
-		B9E69AE3A866BC4745D54D8B9E22A325 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
-		BCC1F4C847576114D17892B8112EBE86 /* ForecastIO.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ForecastIO.xcconfig; sourceTree = "<group>"; };
-		C0A44E202968718ADD0F2BD3D5D8C2BD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C11A37D9FB40AF0D601EEBC2699FBF6A /* CSVImporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CSVImporter.framework; path = CSVImporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4F33A07F32AB5FDE6A83DDFB15F34FA /* CSVImporter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CSVImporter-dummy.m"; sourceTree = "<group>"; };
+		C19A378305A43D08FA4508FE71E5ED66 /* ArrayExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = Frameworks/HandySwift/Extensions/ArrayExtension.swift; sourceTree = "<group>"; };
+		C32C25201807F98A4429B98D11DBCCB9 /* HandySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HandySwift-umbrella.h"; sourceTree = "<group>"; };
+		C364EA6D4ACB1F3F1A5237213364A431 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PureLayout.modulemap; sourceTree = "<group>"; };
 		C762CABC9F229C6E5ADF64A1DC64B651 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		C7A0349B6F0C69BDFCC4520277E0EC05 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		D08A2402EF79C4BDCEE657866E87A545 /* ForecastIOError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ForecastIOError.swift; path = Source/ForecastIOError.swift; sourceTree = "<group>"; };
-		D7D24D8F0D6665A981BC3629C15E9FB8 /* Alert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = Source/Alert.swift; sourceTree = "<group>"; };
-		D84A3FF86C3C1381F519C05EF92EE389 /* DataPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataPoint.swift; path = Source/DataPoint.swift; sourceTree = "<group>"; };
-		D9CFB4561167A2099F6DE5318222EF08 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB403633E631CA6A752D57A7A0F3207D /* CSVImporter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CSVImporter.xcconfig; sourceTree = "<group>"; };
-		DC07E03FA12E44B1346AD64E5C013E6E /* HandySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HandySwift-dummy.m"; sourceTree = "<group>"; };
-		DF34BC8F444090D2FD0C57C3734F307C /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureLayout.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1F4065DC9DF57B65378E6FCED13D741 /* HandySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HandySwift.modulemap; sourceTree = "<group>"; };
-		E56ED78A63F5CBE1FEF5BA92904F3DEE /* CSVImporter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSVImporter-prefix.pch"; sourceTree = "<group>"; };
-		E5D2FF039806C9EB828408EE359D4A21 /* Globals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Globals.swift; path = Frameworks/CSVImporter/Globals.swift; sourceTree = "<group>"; };
-		E90C73B19325D1B6ECFBF65DD28F8E29 /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
-		EA691D5AC2F98CFF91E4085D0D3C0AA8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDC9FCED3B4A683B0074020AF9D15C80 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
-		EF1E26E983D06751F8B70FBAF690601D /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
-		EFD9F5F3907163928F7537AF6B9A9D9C /* Icon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Icon.swift; path = Source/Icon.swift; sourceTree = "<group>"; };
-		FC5B22E97EE4733F80F0364958B181DF /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
-		FED378BA1BCF7F80BCA4E7FB6BE55E63 /* HandySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HandySwift-prefix.pch"; sourceTree = "<group>"; };
-		FF85990AF4500918F230926F8443C4E5 /* IntExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntExtension.swift; path = Frameworks/HandySwift/Extensions/IntExtension.swift; sourceTree = "<group>"; };
+		CFF4BCC44FB04722EDDF007A533F8F17 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		D68C4F73D23A238A60EBF45A18294A89 /* Regex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Regex.swift; path = Frameworks/HandySwift/Structs/Regex.swift; sourceTree = "<group>"; };
+		D9C1014AEB6655BDF3D43DD177935E7E /* Pods_WeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WeatherApp.framework; path = "Pods-WeatherApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE91B09BEC34257607D83475DF97CDE6 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureLayout.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52AB23B598ADDDBAE5DA04893FAE9B3 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		E8037295327C0E61CE2272086613EBE5 /* CSVImporter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVImporter.swift; path = Frameworks/CSVImporter/CSVImporter.swift; sourceTree = "<group>"; };
+		EC8BFAB742DD5FC6B1968802631264CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F287B50491D15FB8C136993F122E2E29 /* CSVImporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CSVImporter.framework; path = CSVImporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F75268563D50F6825EAA38E1F69F0CB4 /* HandySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HandySwift.modulemap; sourceTree = "<group>"; };
+		FDC4FCCCE0E62C2DE36D707F12B69BE5 /* SortedArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SortedArray.swift; path = Frameworks/HandySwift/Structs/SortedArray.swift; sourceTree = "<group>"; };
+		FE22DBA1FEB4518A6EAD9F0F042CB73C /* Source.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Source.swift; path = Frameworks/CSVImporter/Source.swift; sourceTree = "<group>"; };
+		FE394332DD409546E4B2EE24FAFB01CC /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
+		FFF51F2BE6970F93287AB4A56E3AA726 /* IntExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntExtension.swift; path = Frameworks/HandySwift/Extensions/IntExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,19 +158,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		620796515A095B1E9E47B35DB0607421 /* Frameworks */ = {
+		5930580871FDC8B2A09B379AE24A064C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B097C3993A69FE6F5B859C0A004A0A58 /* Foundation.framework in Frameworks */,
+				C73FDF88128709F46A1527B451C6CE26 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93C983F56FCE07E979E75E926CD80F18 /* Frameworks */ = {
+		68286DF1463AD5354020D495B8E230E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3374954BBEED841478810CB66A96CE2 /* Foundation.framework in Frameworks */,
+				166FA0CDB3DD000719DD9AF610F2ACF8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,37 +183,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DCBCD47BA50A89FE1BA6E93CFDC554F4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A99FC6F311A31D8E92FAAE88BDD1A54A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1765BD95972EF10BF5E57C8423A6CCAF /* ForecastIO */ = {
+		157BD9778B17F23C0406727E3E89FD4C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D7D24D8F0D6665A981BC3629C15E9FB8 /* Alert.swift */,
-				B066894B651601B8B36217F9D7F2C9D1 /* DarkSkyClient.swift */,
-				99954941A6C692890F96090F8F56E418 /* DataBlock.swift */,
-				D84A3FF86C3C1381F519C05EF92EE389 /* DataPoint.swift */,
-				4869D692BB1B29CEAA7BAC2B3195BA90 /* Flag.swift */,
-				805F365EEF091A73293AB2D22FBAF649 /* Forecast.swift */,
-				D08A2402EF79C4BDCEE657866E87A545 /* ForecastIOError.swift */,
-				EFD9F5F3907163928F7537AF6B9A9D9C /* Icon.swift */,
-				12E9E99A712CC3278902EBBFE07EAA16 /* Language.swift */,
-				667EBDD9DB271FC31384BDF44533CF15 /* Precipitation.swift */,
-				86890EC6997C0B24506C44215238319B /* RequestMetadata.swift */,
-				C7A0349B6F0C69BDFCC4520277E0EC05 /* Result.swift */,
-				6F1BE94619B2E7914E8AFA336CC3D245 /* Units.swift */,
-				27603860DEDCEC56F299F06561597194 /* Support Files */,
+				6AC6859E7DBA2F5DC1196BEB9B54F814 /* CSVImporter */,
+				EF1FA54EB902332947F1505AB51CAB7B /* HandySwift */,
+				AEA347A687BB4084C684EDC23619E95A /* PureLayout */,
 			);
-			name = ForecastIO;
-			path = ForecastIO;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		1DADAAFE97B5CE37EDF3908EDC7C20BE /* iOS */ = {
@@ -267,65 +204,59 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		27603860DEDCEC56F299F06561597194 /* Support Files */ = {
+		4381C68AE7242FAD9A46EE23805B50EF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2BEB52023182F7B16AEAFD370A17B425 /* ForecastIO.modulemap */,
-				BCC1F4C847576114D17892B8112EBE86 /* ForecastIO.xcconfig */,
-				56B01463F0682E28D3AA1834379A8DC5 /* ForecastIO-dummy.m */,
-				365EAD221AF6C0FE26D0188F9674F6DE /* ForecastIO-prefix.pch */,
-				569F27CF16095A24D9F35EF19884E6B6 /* ForecastIO-umbrella.h */,
-				EA691D5AC2F98CFF91E4085D0D3C0AA8 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ForecastIO";
-			sourceTree = "<group>";
-		};
-		39B61877E32733F741268B1717B9274B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				17859BED5BBFAF8B4B4FBB7CBEA3CF83 /* Info.plist */,
-				7809FA17B470D60FAB4509CBC91F821E /* PureLayout.modulemap */,
-				0D033668D07A496FC92206E8B1CE9564 /* PureLayout.xcconfig */,
-				5798C20A23C1AE1AC4F9EC3B6D95421A /* PureLayout-dummy.m */,
-				EF1E26E983D06751F8B70FBAF690601D /* PureLayout-prefix.pch */,
-				FC5B22E97EE4733F80F0364958B181DF /* PureLayout-umbrella.h */,
+				3B5B13D01BBB76AE1D43A6FBA6D9CA7B /* Info.plist */,
+				C364EA6D4ACB1F3F1A5237213364A431 /* PureLayout.modulemap */,
+				2795F58DE64D5084F280AC153651F2A5 /* PureLayout.xcconfig */,
+				7B31C1EF3E81FFF20244D0218D86E13A /* PureLayout-dummy.m */,
+				5C4604A3BE08EBF353EA1147818FB5CD /* PureLayout-prefix.pch */,
+				6262C223150B74C340D5E24F2FE739D6 /* PureLayout-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/PureLayout";
 			sourceTree = "<group>";
 		};
-		6BA826670894DC533C95052D2AC300FC /* HandySwift */ = {
+		5961DCD9F2A3554EE27AA7322CAE13A5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				311A2A9F550DEAEF218DF9FDC0F7D5F9 /* ArrayExtension.swift */,
-				8E4D4DBA10DF4811930F618ABCCF1D88 /* CollectionExtension.swift */,
-				8435C421AB6DA1C737559DE59DCE020D /* DictionaryExtension.swift */,
-				40B6D929B17A4CA40AF933B503FEE353 /* DispatchTimeIntervalExtension.swift */,
-				95E97BA5D3CA4CEE8E86FA2B38B4DE79 /* FrequencyTable.swift */,
-				91BF3919937F3F38AE6EED5B78DA63A1 /* Globals.swift */,
-				FF85990AF4500918F230926F8443C4E5 /* IntExtension.swift */,
-				67D427CA3F844DF9CAEAF9B5F06B474B /* Regex.swift */,
-				0F0087FCFD4F96A0E31527DDA3549C83 /* SortedArray.swift */,
-				8DFC3E12CCF70B641E40E67F4F383C9D /* StringExtension.swift */,
-				3CD79F0573B102B8360B0F678B56C05D /* TimeIntervalExtension.swift */,
-				A4B409256EE1FEDA72ADEA1DE0DB4487 /* Unowned.swift */,
-				3385A7EA063E9BD73480B41B532050C5 /* Weak.swift */,
-				CA354D2D531345666E5298DF71091B03 /* Support Files */,
+				F75268563D50F6825EAA38E1F69F0CB4 /* HandySwift.modulemap */,
+				207454F86BD8D7AA2A7E2FD3B2EA24FF /* HandySwift.xcconfig */,
+				2FDED0C0B4467761850E161C0005F038 /* HandySwift-dummy.m */,
+				43C0AB95101A3F0997CC787578BDF06C /* HandySwift-prefix.pch */,
+				C32C25201807F98A4429B98D11DBCCB9 /* HandySwift-umbrella.h */,
+				EC8BFAB742DD5FC6B1968802631264CC /* Info.plist */,
 			);
-			name = HandySwift;
-			path = HandySwift;
+			name = "Support Files";
+			path = "../Target Support Files/HandySwift";
 			sourceTree = "<group>";
 		};
-		768AA930E91402513649B80C98AA87AA /* Pods */ = {
+		6AC6859E7DBA2F5DC1196BEB9B54F814 /* CSVImporter */ = {
 			isa = PBXGroup;
 			children = (
-				9F75CB554E5E4E9DFFB556FCB234E879 /* CSVImporter */,
-				1765BD95972EF10BF5E57C8423A6CCAF /* ForecastIO */,
-				6BA826670894DC533C95052D2AC300FC /* HandySwift */,
-				A1711EE8963BC23BE7377DF326E23D5C /* PureLayout */,
+				E8037295327C0E61CE2272086613EBE5 /* CSVImporter.swift */,
+				546E54AD253C40A9EC1424777DE1C7CF /* FileSource.swift */,
+				0BC1571BEFA3A77A8A52D38D929AF1D9 /* Globals.swift */,
+				FE22DBA1FEB4518A6EAD9F0F042CB73C /* Source.swift */,
+				17496357AFA490E5A01671CDB7ECBB75 /* StringSource.swift */,
+				4DBAC4AC9F237A4A7C32306FF03297BC /* TextFile.swift */,
+				A34C57E6113E3B4776B6752CC1CA617F /* TextFileStreamReader.swift */,
+				E6EEE43C0D6730748C5AC6F7917B1A65 /* Support Files */,
 			);
-			name = Pods;
+			name = CSVImporter;
+			path = CSVImporter;
+			sourceTree = "<group>";
+		};
+		74A13C9B99D6E2DBFB5C4D4396F7168C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F287B50491D15FB8C136993F122E2E29 /* CSVImporter.framework */,
+				74589017840D040B96FBF01889E73D90 /* HandySwift.framework */,
+				D9C1014AEB6655BDF3D43DD177935E7E /* Pods_WeatherApp.framework */,
+				DE91B09BEC34257607D83475DF97CDE6 /* PureLayout.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -333,8 +264,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				C4E9A3B88AE5C2C64284DDE340C77B2F /* Frameworks */,
-				768AA930E91402513649B80C98AA87AA /* Pods */,
-				9DD695B6C6E06B3C0A004A725EFECA65 /* Products */,
+				157BD9778B17F23C0406727E3E89FD4C /* Pods */,
+				74A13C9B99D6E2DBFB5C4D4396F7168C /* Products */,
 				DF22C6189AE83C235D15DCD608411604 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -357,64 +288,22 @@
 			path = "Target Support Files/Pods-WeatherApp";
 			sourceTree = "<group>";
 		};
-		9DD695B6C6E06B3C0A004A725EFECA65 /* Products */ = {
+		AEA347A687BB4084C684EDC23619E95A /* PureLayout */ = {
 			isa = PBXGroup;
 			children = (
-				C11A37D9FB40AF0D601EEBC2699FBF6A /* CSVImporter.framework */,
-				8A85212AA964203E2FA8981ACF51B847 /* ForecastIO.framework */,
-				B1798DDA9C0BA84B9DE24F820CB6FEF6 /* HandySwift.framework */,
-				162548D8E004D2E7A2B404AB1665BF91 /* Pods_WeatherApp.framework */,
-				DF34BC8F444090D2FD0C57C3734F307C /* PureLayout.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9F75CB554E5E4E9DFFB556FCB234E879 /* CSVImporter */ = {
-			isa = PBXGroup;
-			children = (
-				1EA4A511123271936B67F76AED8433E9 /* CSVImporter.swift */,
-				B6DAC55559FE7B67C2613B019118588C /* FileSource.swift */,
-				E5D2FF039806C9EB828408EE359D4A21 /* Globals.swift */,
-				72CE21FC3A47BE7214B9997EA78D8E25 /* Source.swift */,
-				6393F10500A5E966AE17588ED6CAFF40 /* StringSource.swift */,
-				5233918E25E3A5A7A8F60EF28757A163 /* TextFile.swift */,
-				60941815F5D0828BC949CD109EC14F5F /* TextFileStreamReader.swift */,
-				C023875E6E1C8FDBEA6657E056666C72 /* Support Files */,
-			);
-			name = CSVImporter;
-			path = CSVImporter;
-			sourceTree = "<group>";
-		};
-		A1711EE8963BC23BE7377DF326E23D5C /* PureLayout */ = {
-			isa = PBXGroup;
-			children = (
-				E90C73B19325D1B6ECFBF65DD28F8E29 /* ALView+PureLayout.h */,
-				3EA42B6B707A0B03181AD2B751B3B69C /* ALView+PureLayout.m */,
-				EDC9FCED3B4A683B0074020AF9D15C80 /* NSArray+PureLayout.h */,
-				2A8567F52E078FC75631FAABBA64F2EE /* NSArray+PureLayout.m */,
-				28DDF0CB0AB0CD2B285BD20A4BBEBFBF /* NSLayoutConstraint+PureLayout.h */,
-				4A382D4FB77A2639F0196EE74D658A83 /* NSLayoutConstraint+PureLayout.m */,
-				0F9FA2154C7D5069DE831364BFD90B38 /* PureLayout.h */,
-				5E609284B9D61436779F352239348052 /* PureLayout+Internal.h */,
-				B9E69AE3A866BC4745D54D8B9E22A325 /* PureLayoutDefines.h */,
-				39B61877E32733F741268B1717B9274B /* Support Files */,
+				19E5159D8C4032631BE071FB47C9F957 /* ALView+PureLayout.h */,
+				7ED0EF5B67FBAFADA17057240B5BBE8F /* ALView+PureLayout.m */,
+				33DA8806ABEFA4F24B92579485835FC0 /* NSArray+PureLayout.h */,
+				A143DDE7AB2308604EB2F1130045DB1D /* NSArray+PureLayout.m */,
+				CFF4BCC44FB04722EDDF007A533F8F17 /* NSLayoutConstraint+PureLayout.h */,
+				E52AB23B598ADDDBAE5DA04893FAE9B3 /* NSLayoutConstraint+PureLayout.m */,
+				8C4D3323084E1393C28426709C359671 /* PureLayout.h */,
+				4A50EBFEEA7BFEA92719EEF448167ADA /* PureLayout+Internal.h */,
+				FE394332DD409546E4B2EE24FAFB01CC /* PureLayoutDefines.h */,
+				4381C68AE7242FAD9A46EE23805B50EF /* Support Files */,
 			);
 			name = PureLayout;
 			path = PureLayout;
-			sourceTree = "<group>";
-		};
-		C023875E6E1C8FDBEA6657E056666C72 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				892BE38EE612087E976DE6941723AD0F /* CSVImporter.modulemap */,
-				DB403633E631CA6A752D57A7A0F3207D /* CSVImporter.xcconfig */,
-				C4F33A07F32AB5FDE6A83DDFB15F34FA /* CSVImporter-dummy.m */,
-				E56ED78A63F5CBE1FEF5BA92904F3DEE /* CSVImporter-prefix.pch */,
-				9425BDDD9713AE8D50E8B2024455F197 /* CSVImporter-umbrella.h */,
-				C0A44E202968718ADD0F2BD3D5D8C2BD /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CSVImporter";
 			sourceTree = "<group>";
 		};
 		C4E9A3B88AE5C2C64284DDE340C77B2F /* Frameworks */ = {
@@ -426,26 +315,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CA354D2D531345666E5298DF71091B03 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E1F4065DC9DF57B65378E6FCED13D741 /* HandySwift.modulemap */,
-				030D0EEE7A3ECCFAC658FACC076DC7C1 /* HandySwift.xcconfig */,
-				DC07E03FA12E44B1346AD64E5C013E6E /* HandySwift-dummy.m */,
-				FED378BA1BCF7F80BCA4E7FB6BE55E63 /* HandySwift-prefix.pch */,
-				0743C09511D6E6C0DC39D13246947700 /* HandySwift-umbrella.h */,
-				D9CFB4561167A2099F6DE5318222EF08 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/HandySwift";
-			sourceTree = "<group>";
-		};
 		DF22C6189AE83C235D15DCD608411604 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				9460719BC261BD6E03214949A14123D1 /* Pods-WeatherApp */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E6EEE43C0D6730748C5AC6F7917B1A65 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D08692B62354FC6998C87A32D428E3E /* CSVImporter.modulemap */,
+				51A7EA3D928BC0214B6AEB3DD407BD5B /* CSVImporter.xcconfig */,
+				ACE8A5727F1FB0EB9A867E391518A101 /* CSVImporter-dummy.m */,
+				4621F95EF524712E164D0B52D8A94E76 /* CSVImporter-prefix.pch */,
+				6FF62A6FB3EE32D80B2C1DF70DDF7758 /* CSVImporter-umbrella.h */,
+				AC2BFEBBFE67BA2188C652104F07C787 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CSVImporter";
+			sourceTree = "<group>";
+		};
+		EF1FA54EB902332947F1505AB51CAB7B /* HandySwift */ = {
+			isa = PBXGroup;
+			children = (
+				C19A378305A43D08FA4508FE71E5ED66 /* ArrayExtension.swift */,
+				4BF6744A9620604E98CD3DEE1387D204 /* CollectionExtension.swift */,
+				66EA04005F287EAC4A893AC6CAD19871 /* DictionaryExtension.swift */,
+				AF5E6B5A9044D7ECFBC25F0FE8B828B7 /* DispatchTimeIntervalExtension.swift */,
+				78BBC3A9750937E9D9B9CC1AEAF9D0E8 /* FrequencyTable.swift */,
+				B7E551262CF383753435C98256EE51B1 /* Globals.swift */,
+				FFF51F2BE6970F93287AB4A56E3AA726 /* IntExtension.swift */,
+				D68C4F73D23A238A60EBF45A18294A89 /* Regex.swift */,
+				FDC4FCCCE0E62C2DE36D707F12B69BE5 /* SortedArray.swift */,
+				6369453AEDAC17ACFE9A00A794222C1D /* StringExtension.swift */,
+				6910204934066C4DFBFB46414ED5516A /* TimeIntervalExtension.swift */,
+				9B61C6F43465EB11E1C5A41302B0200D /* Unowned.swift */,
+				766B39506CFB36E0749F0A5381A6BCFB /* Weak.swift */,
+				5961DCD9F2A3554EE27AA7322CAE13A5 /* Support Files */,
+			);
+			name = HandySwift;
+			path = HandySwift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -459,25 +370,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		26113CD698646C5530D21D1BD42ECEE2 /* Headers */ = {
+		2CB1F31B1AFD059F7307110148DA0C3D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F596BF19FBC841456BD7966BD115B8B /* Pods-WeatherApp-umbrella.h in Headers */,
+				68997692320E6BBC01C76032E14D6B13 /* ALView+PureLayout.h in Headers */,
+				EDF3823E3D8F2A448FDA0C247A3396D7 /* NSArray+PureLayout.h in Headers */,
+				A8EBE3B0417BC268FF924069FAABB647 /* NSLayoutConstraint+PureLayout.h in Headers */,
+				0FA2B5A9B92F753A7B85A8642D2150ED /* PureLayout+Internal.h in Headers */,
+				29A39ECDE881DA0BAB86718F579C36AC /* PureLayout-umbrella.h in Headers */,
+				8A448DA774D87927A234FCD1F3DD5956 /* PureLayout.h in Headers */,
+				007836AEDE9ED0AB39CD24B7B340580A /* PureLayoutDefines.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3E63F7AA4CE4EF9A25D5A3A2C3E4178C /* Headers */ = {
+		8ABEA13BDB98E3BC26D7DE86A8F93F22 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07BA3F1DCEBA3D826FC41F05DCF7DF9B /* ALView+PureLayout.h in Headers */,
-				FA9F74046A0C81A4C92859A4580DFC5D /* NSArray+PureLayout.h in Headers */,
-				9AEFD805C6DA248883DD4D5E13999DF5 /* NSLayoutConstraint+PureLayout.h in Headers */,
-				D83D13650CB0931C21185E91F7233876 /* PureLayout+Internal.h in Headers */,
-				530125AA5B18DCE439379EAD478287A2 /* PureLayout-umbrella.h in Headers */,
-				CC7B8236F971331BD9FF233528DF0EF0 /* PureLayout.h in Headers */,
-				73A761F2864A478B5AD4B76B39178255 /* PureLayoutDefines.h in Headers */,
+				F45492B7B1E0E600C6E1DB941159411F /* Pods-WeatherApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,14 +397,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D2C4EEA8AA9D7CD2543FE7327C76862 /* CSVImporter-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BC7DFA22DD55B59E3131C54777BC9B61 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D859150DBAB0304717D36E49BCB0BEA /* ForecastIO-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,35 +419,38 @@
 			);
 			name = CSVImporter;
 			productName = CSVImporter;
-			productReference = C11A37D9FB40AF0D601EEBC2699FBF6A /* CSVImporter.framework */;
+			productReference = F287B50491D15FB8C136993F122E2E29 /* CSVImporter.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6C2A3E1258B4D43A2A6AA920B19FFBF0 /* ForecastIO */ = {
+		8D2AA7EA203D5DD752DB7784662E4BCB /* Pods-WeatherApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB97B0F7A91DFD80B10424FD7AB6D963 /* Build configuration list for PBXNativeTarget "ForecastIO" */;
+			buildConfigurationList = 4A5CECF83502148A94D4F1C5508C2355 /* Build configuration list for PBXNativeTarget "Pods-WeatherApp" */;
 			buildPhases = (
-				BC7DFA22DD55B59E3131C54777BC9B61 /* Headers */,
-				4073D07FD47948C75048D0396532E6EE /* Sources */,
-				DCBCD47BA50A89FE1BA6E93CFDC554F4 /* Frameworks */,
-				9CE431A1896B4C1CDA1053EAC960561F /* Resources */,
+				8ABEA13BDB98E3BC26D7DE86A8F93F22 /* Headers */,
+				549865A6842B0F367277099CB4213D12 /* Sources */,
+				68286DF1463AD5354020D495B8E230E7 /* Frameworks */,
+				7E54E11028E0A8850A0E90C886DFA626 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EB8059ED1BE08C144AC2F956335369E2 /* PBXTargetDependency */,
+				2BAEF48AE6BF73B50513390ECFD954B4 /* PBXTargetDependency */,
+				A08593109CDA550E5388261219A54A91 /* PBXTargetDependency */,
 			);
-			name = ForecastIO;
-			productName = ForecastIO;
-			productReference = 8A85212AA964203E2FA8981ACF51B847 /* ForecastIO.framework */;
+			name = "Pods-WeatherApp";
+			productName = "Pods-WeatherApp";
+			productReference = D9C1014AEB6655BDF3D43DD177935E7E /* Pods_WeatherApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DA5C93D903CB541A8AEFDE132C09E425 /* PureLayout */ = {
+		A57FB62DC50E8302472F5CB54F9AAF11 /* PureLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC756CC89F114845EA41941114BFB60C /* Build configuration list for PBXNativeTarget "PureLayout" */;
+			buildConfigurationList = C76C9CB19AA774FD7E6E23A3626E67CC /* Build configuration list for PBXNativeTarget "PureLayout" */;
 			buildPhases = (
-				3E63F7AA4CE4EF9A25D5A3A2C3E4178C /* Headers */,
-				6CF106D95F1A9C7BBF5F3A352229F84B /* Sources */,
-				620796515A095B1E9E47B35DB0607421 /* Frameworks */,
-				6AD61FA1BE15C6CB600C6B5BC7D171B7 /* Resources */,
+				2CB1F31B1AFD059F7307110148DA0C3D /* Headers */,
+				2EF61966CA8A86CBC603230A90D8FD20 /* Sources */,
+				5930580871FDC8B2A09B379AE24A064C /* Frameworks */,
+				A8CF55BCF22666ED48BA830C0372F8AB /* Resources */,
 			);
 			buildRules = (
 			);
@@ -552,29 +458,7 @@
 			);
 			name = PureLayout;
 			productName = PureLayout;
-			productReference = DF34BC8F444090D2FD0C57C3734F307C /* PureLayout.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DB7DB1AE6DE4A68A9EAD084970835890 /* Pods-WeatherApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 950AC24800F4E335E6DCF5A9D4DF71AD /* Build configuration list for PBXNativeTarget "Pods-WeatherApp" */;
-			buildPhases = (
-				26113CD698646C5530D21D1BD42ECEE2 /* Headers */,
-				57CDADF73719C93A1CD184D06D33F02E /* Sources */,
-				93C983F56FCE07E979E75E926CD80F18 /* Frameworks */,
-				C1564732751CE42FF48A153D05F1683D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5EABAECEAC9B96AC2972EBC60BAA12B6 /* PBXTargetDependency */,
-				B0E7EB2FA15641E9B8B373619BDFEDF9 /* PBXTargetDependency */,
-				982704906BAFEA44CC5EBCEF447BD82D /* PBXTargetDependency */,
-				1388407E1EA6C4BD0A16AE94364D8119 /* PBXTargetDependency */,
-			);
-			name = "Pods-WeatherApp";
-			productName = "Pods-WeatherApp";
-			productReference = 162548D8E004D2E7A2B404AB1665BF91 /* Pods_WeatherApp.framework */;
+			productReference = DE91B09BEC34257607D83475DF97CDE6 /* PureLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E519BB7367ED5F947328D75DDA324F4A /* HandySwift */ = {
@@ -592,7 +476,7 @@
 			);
 			name = HandySwift;
 			productName = HandySwift;
-			productReference = B1798DDA9C0BA84B9DE24F820CB6FEF6 /* HandySwift.framework */;
+			productReference = 74589017840D040B96FBF01889E73D90 /* HandySwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -612,28 +496,20 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 9DD695B6C6E06B3C0A004A725EFECA65 /* Products */;
+			productRefGroup = 74A13C9B99D6E2DBFB5C4D4396F7168C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				09274DC88265D1DE943813AD2A149713 /* CSVImporter */,
-				6C2A3E1258B4D43A2A6AA920B19FFBF0 /* ForecastIO */,
 				E519BB7367ED5F947328D75DDA324F4A /* HandySwift */,
-				DB7DB1AE6DE4A68A9EAD084970835890 /* Pods-WeatherApp */,
-				DA5C93D903CB541A8AEFDE132C09E425 /* PureLayout */,
+				8D2AA7EA203D5DD752DB7784662E4BCB /* Pods-WeatherApp */,
+				A57FB62DC50E8302472F5CB54F9AAF11 /* PureLayout */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6AD61FA1BE15C6CB600C6B5BC7D171B7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9CE431A1896B4C1CDA1053EAC960561F /* Resources */ = {
+		7E54E11028E0A8850A0E90C886DFA626 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -647,7 +523,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1564732751CE42FF48A153D05F1683D /* Resources */ = {
+		A8CF55BCF22666ED48BA830C0372F8AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -664,43 +540,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4073D07FD47948C75048D0396532E6EE /* Sources */ = {
+		2EF61966CA8A86CBC603230A90D8FD20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7547C7967E16F4A944A4259C9C391B8E /* Alert.swift in Sources */,
-				F66A99544A749C5BB87DF24D94159319 /* DarkSkyClient.swift in Sources */,
-				A3E22083BD14348352239C3491BAD61D /* DataBlock.swift in Sources */,
-				5197631E0AA917DF4B6DAC2DF5AE266E /* DataPoint.swift in Sources */,
-				19CD508321E619CE38D1998DA70A6020 /* Flag.swift in Sources */,
-				3480D5BCC709C99697DED0B99C6D5E9E /* Forecast.swift in Sources */,
-				5596B249D02DEAEA28DC21C25C7EEFEE /* ForecastIO-dummy.m in Sources */,
-				53C0701D98663C6F9E873AA28F03AFD4 /* ForecastIOError.swift in Sources */,
-				34FA5F8FCB7E2ED4FF963C7E0885D655 /* Icon.swift in Sources */,
-				21E6E35259E8962784FD6DFEC9B7A490 /* Language.swift in Sources */,
-				B65FBCBDC62DD3226371BAAA6EC58CD0 /* Precipitation.swift in Sources */,
-				754242530B87F42F55E9ABC3ACBDD046 /* RequestMetadata.swift in Sources */,
-				203108A88D445A89A81AB510EB78A683 /* Result.swift in Sources */,
-				CA29FFB50753FCFCEAD238FBA275638B /* Units.swift in Sources */,
+				94E832A3439E99152430EBD8441644B2 /* ALView+PureLayout.m in Sources */,
+				895F01A67AFC1FAE6417C5BD95CB9E83 /* NSArray+PureLayout.m in Sources */,
+				76E95DBF230A91330DD12B0CFD7889E2 /* NSLayoutConstraint+PureLayout.m in Sources */,
+				66909619E3714D6FA494BD625B64E1B4 /* PureLayout-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57CDADF73719C93A1CD184D06D33F02E /* Sources */ = {
+		549865A6842B0F367277099CB4213D12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1962FA54CC629C0FB8845B9CFCBE419B /* Pods-WeatherApp-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6CF106D95F1A9C7BBF5F3A352229F84B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C07152E31E33F18ADEE5FCD6E9EBFF6F /* ALView+PureLayout.m in Sources */,
-				5CB8FFD3CA70A0FDC1928E74146983C4 /* NSArray+PureLayout.m in Sources */,
-				8A4FFABB70E8FD25975511E0C5C91181 /* NSLayoutConstraint+PureLayout.m in Sources */,
-				79152B2278049A650B3557EB1A1B799D /* PureLayout-dummy.m in Sources */,
+				3954F6B3CACD4BCFFF4CDB965AE7E6C9 /* Pods-WeatherApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -743,11 +598,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1388407E1EA6C4BD0A16AE94364D8119 /* PBXTargetDependency */ = {
+		2BAEF48AE6BF73B50513390ECFD954B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = PureLayout;
-			target = DA5C93D903CB541A8AEFDE132C09E425 /* PureLayout */;
-			targetProxy = DE7059EAA2033293D9F5199825400B97 /* PBXContainerItemProxy */;
+			name = HandySwift;
+			target = E519BB7367ED5F947328D75DDA324F4A /* HandySwift */;
+			targetProxy = 7C9C62E6D570A6D26FC8763763C73DEA /* PBXContainerItemProxy */;
 		};
 		3BBB7937FEA6E9C0066F853FB51D44A0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -755,65 +610,24 @@
 			target = E519BB7367ED5F947328D75DDA324F4A /* HandySwift */;
 			targetProxy = 2F30EDF3565A2278DE20E25646083965 /* PBXContainerItemProxy */;
 		};
-		5EABAECEAC9B96AC2972EBC60BAA12B6 /* PBXTargetDependency */ = {
+		A08593109CDA550E5388261219A54A91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = A57FB62DC50E8302472F5CB54F9AAF11 /* PureLayout */;
+			targetProxy = 992FD44B475929C9C48B8000371CDA0B /* PBXContainerItemProxy */;
+		};
+		EB8059ED1BE08C144AC2F956335369E2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CSVImporter;
 			target = 09274DC88265D1DE943813AD2A149713 /* CSVImporter */;
-			targetProxy = 4B1BA4EBA9A3F85E83ADD4B9FABD8012 /* PBXContainerItemProxy */;
-		};
-		982704906BAFEA44CC5EBCEF447BD82D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HandySwift;
-			target = E519BB7367ED5F947328D75DDA324F4A /* HandySwift */;
-			targetProxy = 635BC7856DC6E0DBE39634A021A55B68 /* PBXContainerItemProxy */;
-		};
-		B0E7EB2FA15641E9B8B373619BDFEDF9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ForecastIO;
-			target = 6C2A3E1258B4D43A2A6AA920B19FFBF0 /* ForecastIO */;
-			targetProxy = D793F8E2C2A70BC7EA01A3FF0A7CFDBC /* PBXContainerItemProxy */;
+			targetProxy = 00D36295EF30936D62359B38FC5C18C3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		231B1A39090FACF848403A974EA32E59 /* Debug */ = {
+		0BFA8C3C69B96122F5FEFC5DA9F2D29C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 030D0EEE7A3ECCFAC658FACC076DC7C1 /* HandySwift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HandySwift/HandySwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HandySwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/HandySwift/HandySwift.modulemap";
-				PRODUCT_MODULE_NAME = HandySwift;
-				PRODUCT_NAME = HandySwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2CC0E06FE04297C1ED0E2B5351F8D3D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D033668D07A496FC92206E8B1CE9564 /* PureLayout.xcconfig */;
+			baseConfigurationReference = 2795F58DE64D5084F280AC153651F2A5 /* PureLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -846,6 +660,113 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		22448BB62C422E55200917F554E72BDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B0506FFDEA45957F72FED02AAA204B4 /* Pods-WeatherApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WeatherApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WeatherApp/Pods-WeatherApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		231B1A39090FACF848403A974EA32E59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 207454F86BD8D7AA2A7E2FD3B2EA24FF /* HandySwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HandySwift/HandySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HandySwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/HandySwift/HandySwift.modulemap";
+				PRODUCT_MODULE_NAME = HandySwift;
+				PRODUCT_NAME = HandySwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3C0B4B1FFA1E3334BE1DEE6C7E8CB9B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2795F58DE64D5084F280AC153651F2A5 /* PureLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				PRODUCT_MODULE_NAME = PureLayout;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		5DE19CECB206ACCCACF04D62F93FFDA6 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -908,41 +829,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		680673ADE6349A52A89BD301E5F50EEF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D033668D07A496FC92206E8B1CE9564 /* PureLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
-				PRODUCT_MODULE_NAME = PureLayout;
-				PRODUCT_NAME = PureLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		858D01EEFE984249A9581D18DBEA53F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1010,7 +896,78 @@
 			};
 			name = Debug;
 		};
-		85F6AF1030F023515A0C85643D088DDC /* Release */ = {
+		9337EDC2A168506C3A83336B33BD97F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51A7EA3D928BC0214B6AEB3DD407BD5B /* CSVImporter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CSVImporter/CSVImporter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CSVImporter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CSVImporter/CSVImporter.modulemap";
+				PRODUCT_MODULE_NAME = CSVImporter;
+				PRODUCT_NAME = CSVImporter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C2210272702D7CEF2EA0639733D0957E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51A7EA3D928BC0214B6AEB3DD407BD5B /* CSVImporter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CSVImporter/CSVImporter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CSVImporter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CSVImporter/CSVImporter.modulemap";
+				PRODUCT_MODULE_NAME = CSVImporter;
+				PRODUCT_NAME = CSVImporter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE08A22C603A34B6111D3725903E7180 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B8162A2625EE65CB9B5006CA4DB8ACF0 /* Pods-WeatherApp.release.xcconfig */;
 			buildSettings = {
@@ -1048,151 +1005,9 @@
 			};
 			name = Release;
 		};
-		9337EDC2A168506C3A83336B33BD97F8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB403633E631CA6A752D57A7A0F3207D /* CSVImporter.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CSVImporter/CSVImporter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CSVImporter/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/CSVImporter/CSVImporter.modulemap";
-				PRODUCT_MODULE_NAME = CSVImporter;
-				PRODUCT_NAME = CSVImporter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BB5E3B3F77702B1EB74BABA73A4B363F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCC1F4C847576114D17892B8112EBE86 /* ForecastIO.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ForecastIO/ForecastIO-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ForecastIO/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ForecastIO/ForecastIO.modulemap";
-				PRODUCT_MODULE_NAME = ForecastIO;
-				PRODUCT_NAME = ForecastIO;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C2210272702D7CEF2EA0639733D0957E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB403633E631CA6A752D57A7A0F3207D /* CSVImporter.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CSVImporter/CSVImporter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CSVImporter/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/CSVImporter/CSVImporter.modulemap";
-				PRODUCT_MODULE_NAME = CSVImporter;
-				PRODUCT_NAME = CSVImporter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C88BC7DFC3B269B3F4A8D4A4C3984EE0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCC1F4C847576114D17892B8112EBE86 /* ForecastIO.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ForecastIO/ForecastIO-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ForecastIO/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ForecastIO/ForecastIO.modulemap";
-				PRODUCT_MODULE_NAME = ForecastIO;
-				PRODUCT_NAME = ForecastIO;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		CE37F5E35FCA770D845E161DED6A9082 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 030D0EEE7A3ECCFAC658FACC076DC7C1 /* HandySwift.xcconfig */;
+			baseConfigurationReference = 207454F86BD8D7AA2A7E2FD3B2EA24FF /* HandySwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1226,43 +1041,6 @@
 			};
 			name = Release;
 		};
-		FBD794E6A09529F8BF9F4C82EF8374DE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B0506FFDEA45957F72FED02AAA204B4 /* Pods-WeatherApp.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WeatherApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WeatherApp/Pods-WeatherApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1284,20 +1062,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		950AC24800F4E335E6DCF5A9D4DF71AD /* Build configuration list for PBXNativeTarget "Pods-WeatherApp" */ = {
+		4A5CECF83502148A94D4F1C5508C2355 /* Build configuration list for PBXNativeTarget "Pods-WeatherApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FBD794E6A09529F8BF9F4C82EF8374DE /* Debug */,
-				85F6AF1030F023515A0C85643D088DDC /* Release */,
+				22448BB62C422E55200917F554E72BDC /* Debug */,
+				CE08A22C603A34B6111D3725903E7180 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC756CC89F114845EA41941114BFB60C /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
+		C76C9CB19AA774FD7E6E23A3626E67CC /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				680673ADE6349A52A89BD301E5F50EEF /* Debug */,
-				2CC0E06FE04297C1ED0E2B5351F8D3D8 /* Release */,
+				3C0B4B1FFA1E3334BE1DEE6C7E8CB9B3 /* Debug */,
+				0BFA8C3C69B96122F5FEFC5DA9F2D29C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1307,15 +1085,6 @@
 			buildConfigurations = (
 				231B1A39090FACF848403A974EA32E59 /* Debug */,
 				CE37F5E35FCA770D845E161DED6A9082 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EB97B0F7A91DFD80B10424FD7AB6D963 /* Build configuration list for PBXNativeTarget "ForecastIO" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BB5E3B3F77702B1EB74BABA73A4B363F /* Debug */,
-				C88BC7DFC3B269B3F4A8D4A4C3984EE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
